@@ -1,0 +1,54 @@
+.icon {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+
+  width: 90px;
+  justify-content: space-between;
+}
+
+.icon--phone {
+  background-image: url(/icons/phone-call2.png);
+  height: 35px;
+  width: 30px;
+
+}
+
+.icon--menu {
+  background-image: url(/icons/icon-burger-menu.svg);
+
+  height: 35px;
+  width: 43px;
+}
+
+.icon--close {
+  background-image: url(/Photo/close.svg);
+
+  height: 30px;
+  width: 30px;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+
+.icon--close {
+  background-image: url(/Photo/close.svg);
+
+  height: 30px;
+  width: 30px;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+
+.icon--galochka {
+  background-image: url(/Photo/galochka-White.svg);
+  margin-bottom: 3px;
+  height: 25px;
+  width: 25px;
+  color: white;
+  // display: inline;
+}

@@ -1,0 +1,190 @@
+.section-form {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+
+  background-color: #000000;
+  padding: 15px;
+
+  // @include onMobile {
+  //   justify-content: center;
+  // }
+
+  @include onTablet {
+    display: flex;
+    padding: 35px;
+  }
+
+  @include onDesktop {
+    justify-content: space-around;
+    margin-bottom: 54px;
+  }
+}
+
+.form-title {
+  display: flex;
+  justify-content: center;
+
+}
+
+.form-text {
+  color: white;
+  font-size: 12px;
+}
+
+.form-info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message-us-section {
+  // margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  // position: relative;
+
+  // @include onDesktop {
+  //   justify-content: space-around;
+  //   margin-bottom: 54px;
+  // }
+
+  .questions-info-box {
+    padding-top: 30px;
+
+    @include onTablet {
+      display: flex;
+    }
+
+    @include onDesktop {
+      width: 100%;
+
+      max-width: 1170px;
+
+      gap: 45px;
+    }
+
+    .questions-container {
+      // margin-right: 30px;
+
+      @include onTablet {
+        max-width: 371px;
+        margin-right: 142px;
+      }
+
+      @include onDesktop {
+        margin-right: 230px;
+      }
+
+      .here-few {
+        padding-bottom: 40px;
+      }
+
+      .message-us {
+        color: #fff;
+        font-size: 24px;
+        // line-height: 36px;
+        // text-align: left;
+        padding-bottom: 25px;
+        box-sizing: border-box;
+
+        .textarea {
+          padding: 4px 2px 4px 2px;
+        }
+
+        .form-input {
+          font-family: "Manrope", sans-serif;
+          font-size: 16px;
+          line-height: 150%;
+          color: #eee5e5;
+          // color: rgba(255, 255, 255, 0.3);
+          width: 99%;
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          resize: none;
+          margin-bottom: 25px;
+        }
+
+        .form-input:hover,
+        .form-input:focus,
+        .form-input:active {
+          outline: none;
+          border-bottom: 1px solid rgba(251, 251, 251, 0.763);
+          // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .form-input:invalid {
+          color: rgba(235, 87, 87, 1);
+        }
+
+        .button-container {
+          display: flex;
+          justify-content: center;
+        }
+
+        .form-button {
+
+          margin-bottom: 56px;
+
+          font-size: 15px;
+          line-height: 48px;
+          text-transform: uppercase;
+          color: rgb(0, 0, 0);
+          border: 1px solid transparent;
+          background-color: #ffffff;
+          cursor: pointer;
+          transition: all 0.5s;
+        }
+
+        .button {
+          display: block;
+          line-height: 50px;
+          width: 240px;
+          text-align: center;
+          text-transform: uppercase;
+          transition: background-color 0.5s;
+        }
+
+        .form-button:hover {
+          background-color: rgba(3, 131, 158, 0.5);
+        }
+      }
+    }
+
+    .info-container {
+      padding-bottom: 20px;
+      display: none;
+
+      @include onTablet {
+        // padding-top: 88px;
+        display: block;
+
+        max-width: 270px;
+      }
+
+      .contact {
+        margin-bottom: 34px;
+
+        .contact-link {
+          line-height: 150%;
+          color: white;
+          border-bottom: 1px solid transparent;
+          transition: all 0.5s;
+          text-decoration: none;
+        }
+
+        .contact-link:hover {
+          color: #887676;
+          border-bottom: 1px solid #ffffff;;
+        }
+
+        .contact-type {
+          line-height: 150%;
+          padding-bottom: 5px;
+          font-size: 24px;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+}

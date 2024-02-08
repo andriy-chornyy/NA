@@ -1,13 +1,336 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-  </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+<html lang="en" class="page">
+<head class="page">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.scss">
+  <script
+    defer
+    type="text/javascript"
+    src="script.js"
+  >
+  </script>
+</head>
+<body class="page__body">
+  <header class="header">
+    <div class="header__top">
+      <div id="image-container">
+        <img src="./Photo/MainFotoTitle.png" alt="Image 1" class="header-image" />
+        <img src="./Photo/2.jpg" alt="Image 2" class="header-image" />
+        <img src="./Photo/3.jpg" alt="Image 3" class="header-image" />
+        <img src="./Photo/4.jpg" alt="Image 4" class="header-image" />
+        <img src="./Photo/5.jpg" alt="Image 5" class="header-image" />
+      </div>
+
+      <div class="header-container">
+        <a href="#">
+          <img src="/Photo/LogoPaloma.svg" alt="Paloma Logo">
+        </a>
+
+        <div class="icon-container">
+          <div class="dropdown">
+            <div class="dropbtn"></div>
+            <div class="dropdown-content">
+              <div class="a-dropdown-container">
+                <a class="a-dropdown-content" href="tel:+380989034042">
+                  +380 989 03 40 42
+                </a>
+              </div>
+              <div class="a-dropdown-container">
+                <!-- <a class="a-dropdown-content" href="tel:+380979131353">
+                  +380 979 13 13 53
+                </a> -->
+                <a class="a-dropdown-content" href="tel:123-456-7890">
+                  +380 979 13 13 53
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#menu" class="icon icon--menu"></a>
+        </div>
+      </div>
+
+      <div class="button header--button">
+        <a class="button-link" href="#">
+          <h2 class="button-text">Реалізовані проєкти</h2>
+        </a>
+      </div>
+    </div>
+
+    <aside class="menu" id="menu">
+      <div class="menu-container">
+        <a href="#">
+          <img src="Photo/LogoPaloma.png" alt="Paloma Logo">
+        </a>
+
+        <a href="#" class="icon icon--close"></a>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#section-our-approach">наш підхід до реалізації проєктів</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#projects">реалізовані проєкти</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link" href="#form">залишити заявку</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#special-ofer">офер для вас</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#collaboration">Співпраця з нами</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#price-design">Ціни дезайн</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#services-prices">Ціни послуги</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#footer">Наші контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="header__bottom">
+      <div class="title-container">
+        <h1 class="title title__white">
+          Реалізація проєктів<br> інтер&apos;єра
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <section id="section-our-approach" class="section-our-approach">
+    <div class="title-container">
+      <h1 class="title title__bleack">
+        Наш підхід до<br> реалізації проєктів
+      </h1>
+    </div>
+
+
+    <div class="our-approach-img">
+      <img class="img" src="./Photo/Наш-подход.png" alt="Наш-подход.png">
+    </div>
+
+    <div class="info-block">
+      <div class= "our-approach-info">
+        <div class="approach-icon">
+          <img class="approach-icon-img"src="/Photo/Circul2.svg" alt="img">
+        </div>
+        <div class="container-our-approach-info">
+
+            <img class="krug-img" src="/Photo/Krug.svg" alt="img">
+
+          <h2 class="content">Дизайн</h2>
+          <p class="info">
+            Ми розробляємо неповторний інтер’єрний дизайн. Наші проєкти — це відображення вашого стилю життя, роботи і відпочинку.
+          </p>
+        </div>
+
+        <div class="container-our-approach-info">
+          <img class="krug-img" src="/Photo/Galochka.svg" alt="img">
+
+          <h2 class="content">Ремонт</h2>
+          <p class="info">
+            Ми втілюємо в життя найсміливіші ідеї. Наш ремонт — це відповідальний підхід, сучасні тенденції, оптимальні рішення.
+          </p>
+        </div>
+
+        <div class="container-our-approach-info">
+          <img class="krug-img" src="/Photo/Pychka.svg" alt="img">
+          <h2 class="content">Комплектація</h2>
+          <p class="info">
+            З унікальними знижками від наших партнерів ми облаштовуємо ваш інтер’єр матеріалами віп-сегменту за ціною мас-маркету.
+          </p>
+        </div>
+
+        <div class="button-container">
+          <div class="button">
+            <a href="#" class="button-link">
+              <h2 class="button-text">Розрахувати проєкт</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-completed-projects" >
+    <div class="title-container">
+      <h1 class="title">
+        Реалізовані проєкти
+      </h1>
+    </div>
+
+    <div class="projects-container">
+      <ul class="projects__list">
+        <li class="projects__list-item">
+          <a class="projects__link" href="">White Box</a>
+        </li>
+        <li class="projects__list-item">
+          <a class="projects__link" href="">Standart</a>
+        </li>
+        <li class="projects__list-item">
+          <a class="projects__link" href="">Premium</a>
+        </li>
+        <li class="projects__list-item">
+          <a class="projects__link" href="">Commercial</a>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section id="form" class="section-form">
+    <div class="section-form-container">
+      <h1 class="title title__white form-title">
+        безкоштовно!
+      </h1>
+
+      <div class="form-info">
+        <div class="icon icon--galochka"></div>
+        <div class="form-text">Консультація досвідченого менеджера</div>
+      </div>
+      <div class="form-info">
+        <div class="icon icon--galochka"></div>
+        <div class="form-text">Виїзд спеціаліста на заміри вашого об'экта</div>
+      </div>
+      <div class="form-info">
+        <div class="icon icon--galochka"></div>
+        <div class="form-text">Професійний розрахунок кошторису</div>
+      </div>
+
+
+
+<div class="message-us-section">
+
+  <div class="questions-info-box" id="questions-info-box">
+    <div class="questions-container">
+      <form action="#" class="message-us" id="message-us__form">
+        <h2 class="message-us">
+          Бажаєте залишити заявку на консультацію?
+        </h2>
+
+        <input type="text" placeholder="Ваше ім'я" class="form-input" required="">
+
+        <input type="tel" placeholder="Номер телефона" class="form-input" required="">
+
+        <textarea name="message" placeholder="Повідомлення" rows="1" class="form-input textarea" required=""></textarea>
+
+        <div class="button-container">
+          <button href="#" type="submit" class="form-button button">
+            НАДІСЛАТИ
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="info-container">
+      <div class="contact">
+        <p class="contact-type">
+          Наші номери
+        </p>
+
+        <div>
+          <a href="tel:+380979131353" class="contact-link">
+            +38 097 913 13 53
+          </a>
+        </div>
+        <a href="tel:+380979131353" class="contact-link">
+           +38 097 913 13 53
+        </a>
+      </div>
+
+      <div class="contact">
+        <p class="contact-type">
+          Наша пошта
+        </p>
+
+        <a href="mailto:palomaCompany@gmail.com" class="contact-link">
+          palomaCompany@gmail.com
+        </a>
+      </div>
+
+      <div class="contact">
+         <p class="contact-type">
+            Наш офіс
+        </p>
+
+        <a target="_blank" href="https://goo.gl/maps/rtkaop6EfdUsvGz88" class="contact-link">
+          United Kingdom 99 Staple Hill Road, Bristol, BS16 5AD
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- #region all sections-->
+  <section id="special-ofer" class="section-special-ofer">
+  </section>
+  <section id="collaboration" class="section-collaboration">
+  </section>
+  <section id="price-design" class="section-price-design">
+  </section>
+  <section id="services-prices" class="section-services-prices">
+  </section>
+  <section id="footer" class="footer">
+  </section>
+  <!-- #endregion -->
+
+
+  <!-- <section class="section-completed-projects">
+    <h1 class="our-approach-title">
+      Реалізовані проєкти
+    </h1>
+
+    <ul class="header__big-menu">
+      <li class="header__big-menu__item">
+        <a href="#features" class="header__big-menu__link">
+          <h2>Features</h2>
+        </a>
+      </li>
+
+      <li class="header__big-menu__item">
+        <a href="#about-us" class="header__big-menu__link">
+          <h2>About us</h2></a>
+      </li>
+
+      <li class="header__big-menu__item">
+        <a href="#materials" class="header__big-menu__link"><h2>Materials</h2></a>
+      </li>
+
+      <li class="header__big-menu__item">
+        <a href="#message-us" class="header__big-menu__link"><h2>Message us</h2></a>
+      </li>
+    </ul>
+
+  </section> -->
+</body>
 </html>

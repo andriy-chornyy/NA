@@ -1,0 +1,49 @@
+.title-container {
+  padding-left: 15px;
+}
+
+.our-approach-img {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.approach-icon {
+  display: flex;
+  justify-content: center;
+}
+.approach-icon-img {
+  height: 50px;
+  width: 50px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info {
+  display: inline;
+  font-style: italic;
+}
+
+.our-approach-info{
+  padding: 15px 15px 5px;
+}
+
+.content {
+  display: inline;
+  padding-right: 10px;
+}
+
+.container-our-approach-info {
+  margin-bottom: 20px;
+  // display: flex;
+}
+
+.krug-img {
+  height: 30px;
+  width: 30px;
+}

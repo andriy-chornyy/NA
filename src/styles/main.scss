@@ -1,7 +1,34 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+// @import "fonts";
 
-body {
-  background: $c-gray;
+// @import "typography";
+@import "mixins";
+@import "reset";
+@import "header";
+@import "section-our-approach";
+@import "section-completed-projects";
+@import "info-block";
+@import "button";
+
+@import "icon";
+@import "form";
+@import "fonts";
+
+
+/* #region page */
+.page {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+
+  word-spacing: 4px;
+  line-height: 1.5;
+
+  scroll-behavior: smooth;
 }
+
+a {
+  text-decoration: none;
+}
+
+
+/* #endregion */
