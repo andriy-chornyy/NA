@@ -1,0 +1,29 @@
+.section {
+  // display: flex;
+  padding: 15px;
+  // justify-content: space-around;
+
+
+
+  @include onTablet {
+    // display: flex;
+    padding: 20px 35px;
+    // justify-content: space-around;
+  }
+
+  @include onDesktop {
+    max-width: 1440px;
+    padding: 20px 70px;
+  }
+}
+
+.title-container {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  // height: 15vh;
+}
+
+.title-center {
+  justify-content: center;
+}

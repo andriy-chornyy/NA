@@ -4,8 +4,8 @@
 @import "mixins";
 @import "reset";
 @import "header";
-@import "section-our-approach";
-@import "section-completed-projects";
+@import "our-approach";
+@import "projects";
 @import "info-block";
 @import "button";
 
@@ -13,17 +13,33 @@
 @import "form";
 @import "fonts";
 
+@import "section";
+@import "cooperation";
+@import "design-prices";
+@import "footer.scss";
 
 /* #region page */
 .page {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 140%;
+  margin: 0 auto;
+
+  background-color: #000000;
 
   word-spacing: 4px;
-  line-height: 1.5;
+  line-height: 1.3;
+
+  box-sizing: border-box;
 
   scroll-behavior: smooth;
+}
+
+.main {
+  // display: flex;
+
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 a {

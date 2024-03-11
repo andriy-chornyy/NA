@@ -1,31 +1,25 @@
-.section-form {
-  margin: 0 auto;
-  max-width: 1440px;
-  display: flex;
-
-  background-color: #000000;
-  padding: 15px;
-
+.form {
+  display: block;
   // @include onMobile {
   //   justify-content: center;
   // }
 
   @include onTablet {
-    display: flex;
-    padding: 35px;
+    // display: flex;
+    // padding: 35px;
+
   }
 
   @include onDesktop {
-    justify-content: space-around;
-    margin-bottom: 54px;
+    // margin-bottom: 54px;
   }
 }
 
-.form-title {
-  display: flex;
-  justify-content: center;
+// .form-title {
+//   display: flex;
+//   justify-content: center;
 
-}
+// }
 
 .form-text {
   color: white;
@@ -37,10 +31,11 @@
   align-items: flex-end;
 }
 
-.message-us-section {
+.message-us {
   // margin: 0 auto;
-  max-width: 1440px;
-  display: flex;
+  // max-width: 1440px;
+  // display: flex;
+  // flex-direction: column;
   // position: relative;
 
   // @include onDesktop {
@@ -53,6 +48,9 @@
 
     @include onTablet {
       display: flex;
+      // justify-content: space-between;
+      gap: 85px;
+      // padding-top: 20px;
     }
 
     @include onDesktop {
@@ -60,15 +58,19 @@
 
       max-width: 1170px;
 
-      gap: 45px;
+      gap: 100px;
     }
 
     .questions-container {
       // margin-right: 30px;
+      display: flex;
+      flex-direction: column;
 
       @include onTablet {
-        max-width: 371px;
-        margin-right: 142px;
+        width: 45%;
+        // width: 50wh;
+        // max-width: 371px;
+        // margin-right: 142px;
       }
 
       @include onDesktop {
@@ -120,11 +122,10 @@
         .button-container {
           display: flex;
           justify-content: center;
+          align-items: center;
         }
 
         .form-button {
-
-          margin-bottom: 56px;
 
           font-size: 15px;
           line-height: 48px;
@@ -136,14 +137,6 @@
           transition: all 0.5s;
         }
 
-        .button {
-          display: block;
-          line-height: 50px;
-          width: 240px;
-          text-align: center;
-          text-transform: uppercase;
-          transition: background-color 0.5s;
-        }
 
         .form-button:hover {
           background-color: rgba(3, 131, 158, 0.5);
@@ -159,11 +152,17 @@
         // padding-top: 88px;
         display: block;
 
+        width: 45%;
+
         max-width: 270px;
       }
 
       .contact {
         margin-bottom: 34px;
+
+        @include onTablet {
+          margin-bottom:40px;
+        }
 
         .contact-link {
           line-height: 150%;

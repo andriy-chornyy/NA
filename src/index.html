@@ -17,6 +17,7 @@
   </script>
 </head>
 <body class="page__body">
+  <div class="main">
   <header class="header">
     <div class="header__top">
       <div id="image-container">
@@ -27,7 +28,7 @@
         <img src="./Photo/5.jpg" alt="Image 5" class="header-image" />
       </div>
 
-      <div class="header-container">
+      <div class="header-container section">
         <a href="#">
           <img src="/Photo/LogoPaloma.svg" alt="Paloma Logo">
         </a>
@@ -63,10 +64,10 @@
       </div>
     </div>
 
-    <aside class="menu" id="menu">
+    <aside class="menu section" id="menu">
       <div class="menu-container">
         <a href="#">
-          <img src="Photo/LogoPaloma.png" alt="Paloma Logo">
+          <img src="Photo/LogoPaloma.svg" alt="Paloma Logo">
         </a>
 
         <a href="#" class="icon icon--close"></a>
@@ -104,7 +105,7 @@
       </nav>
     </aside>
 
-    <div class="header__bottom">
+    <div class="header__bottom section">
       <div class="title-container">
         <h1 class="title title__white">
           Реалізація проєктів<br> інтер&apos;єра
@@ -113,9 +114,9 @@
     </div>
   </header>
 
-  <section id="section-our-approach" class="section-our-approach">
-    <div class="title-container">
-      <h1 class="title title__bleack">
+  <section id="our-approach" class="our-approach">
+    <div class="title-container section">
+      <h1 class="title">
         Наш підхід до<br> реалізації проєктів
       </h1>
     </div>
@@ -126,7 +127,7 @@
     </div>
 
     <div class="info-block">
-      <div class= "our-approach-info">
+      <div class= "our-approach-info section">
         <div class="approach-icon">
           <img class="approach-icon-img"src="/Photo/Circul2.svg" alt="img">
         </div>
@@ -168,15 +169,15 @@
     </div>
   </section>
 
-  <section id="projects" class="section-completed-projects" >
-    <div class="title-container">
+  <section id="projects" class="projects">
+    <div class="section title-container">
       <h1 class="title">
         Реалізовані проєкти
       </h1>
     </div>
 
     <div class="projects-container">
-      <ul class="projects__list">
+      <ul class="projects__list section">
         <li class="projects__list-item">
           <a class="projects__link" href="">White Box</a>
         </li>
@@ -191,14 +192,15 @@
         </li>
       </ul>
     </div>
-
   </section>
 
-  <section id="form" class="section-form">
-    <div class="section-form-container">
-      <h1 class="title title__white form-title">
-        безкоштовно!
-      </h1>
+  <section id="form" class="form">
+    <h1 class="title title__white title-container section title-center">
+      безкоштовно!
+    </h1>
+
+
+    <div class="section form-container">
 
       <div class="form-info">
         <div class="icon icon--galochka"></div>
@@ -215,68 +217,70 @@
 
 
 
-<div class="message-us-section">
+      <div class="message-us">
 
-  <div class="questions-info-box" id="questions-info-box">
-    <div class="questions-container">
-      <form action="#" class="message-us" id="message-us__form">
-        <h2 class="message-us">
-          Бажаєте залишити заявку на консультацію?
-        </h2>
+        <div class="questions-info-box" id="questions-info-box">
+          <div class="questions-container">
+            <form action="#" class="message-us" id="message-us__form">
+              <h2 class="message-us">
+                Бажаєте залишити заявку на консультацію?
+              </h2>
 
-        <input type="text" placeholder="Ваше ім'я" class="form-input" required="">
+              <input type="text" placeholder="Ваше ім'я" class="form-input" required="">
 
-        <input type="tel" placeholder="Номер телефона" class="form-input" required="">
+              <input type="tel" placeholder="Номер телефона" class="form-input" required="">
 
-        <textarea name="message" placeholder="Повідомлення" rows="1" class="form-input textarea" required=""></textarea>
+              <textarea name="message" placeholder="Повідомлення" rows="1" class="form-input textarea" required=""></textarea>
 
-        <div class="button-container">
-          <button href="#" type="submit" class="form-button button">
-            НАДІСЛАТИ
-          </button>
+              <div class="button-container">
+                <button href="#" type="submit" class="form-button button">
+                  <h2>
+                    НАДІСЛАТИ
+                  </h2>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="info-container">
+            <div class="contact">
+              <p class="contact-type">
+                Наші номери
+              </p>
+
+              <div>
+                <a href="tel:+380979131353" class="contact-link">
+                  +38 097 913 13 53
+                </a>
+              </div>
+              <a href="tel:+380979131353" class="contact-link">
+                +38 097 913 13 53
+              </a>
+            </div>
+
+            <div class="contact">
+              <p class="contact-type">
+                Наша пошта
+              </p>
+
+              <a href="mailto:palomaCompany@gmail.com" class="contact-link">
+                palomaCompany@gmail.com
+              </a>
+            </div>
+
+            <div class="contact">
+              <p class="contact-type">
+                  Наш офіс
+              </p>
+
+              <a target="_blank" href="https://goo.gl/maps/rtkaop6EfdUsvGz88" class="contact-link">
+                United Kingdom 99 Staple Hill Road, Bristol, BS16 5AD
+              </a>
+            </div>
+          </div>
         </div>
-      </form>
-    </div>
 
-    <div class="info-container">
-      <div class="contact">
-        <p class="contact-type">
-          Наші номери
-        </p>
-
-        <div>
-          <a href="tel:+380979131353" class="contact-link">
-            +38 097 913 13 53
-          </a>
-        </div>
-        <a href="tel:+380979131353" class="contact-link">
-           +38 097 913 13 53
-        </a>
       </div>
-
-      <div class="contact">
-        <p class="contact-type">
-          Наша пошта
-        </p>
-
-        <a href="mailto:palomaCompany@gmail.com" class="contact-link">
-          palomaCompany@gmail.com
-        </a>
-      </div>
-
-      <div class="contact">
-         <p class="contact-type">
-            Наш офіс
-        </p>
-
-        <a target="_blank" href="https://goo.gl/maps/rtkaop6EfdUsvGz88" class="contact-link">
-          United Kingdom 99 Staple Hill Road, Bristol, BS16 5AD
-        </a>
-      </div>
-    </div>
-  </div>
-
-</div>
 
 
 
@@ -285,14 +289,229 @@
     </div>
   </section>
 
+  <section id="cooperation" class="cooperation">
+    <div class="title-container section">
+      <h1 class="title">
+        Як відбувається<br> співробітництво?
+      </h1>
+    </div>
 
+    <div class="cooperation-container section">
+      <div class="cooperation-img">
+        <img class="cooperation-foto" src="/Photo/cooperation2.png" alt="Наш-підхід">
+      </div>
+
+      <div class="info-container">
+        <ol class="cooperation-list">
+          <li class="cooperation-info">
+            Залишаєте заявку на нашому сайті
+          </li>
+          <li class="cooperation-info">
+            Консультуємо, розраховуємо вартість
+          </li>
+          <li class="cooperation-info">
+            Підписуємо партнерський договір
+          </li>
+          <li class="cooperation-info">
+            Підбираємо комплектуючі
+          </li>
+          <li class="cooperation-info">
+            Проєктуємо та робимо дизайн-проєкт
+          </li>
+          <li class="cooperation-info">
+            Втілюємо дизайн-проєкт
+          </li>
+          <li class="cooperation-info">
+            Постобслуговування та гарантія
+          </li>
+        </ol>
+
+        <ol class="cooperation-list-onDesktop">
+          <li class="cooperation-info">
+            Консультація та прорахунок. Залиште заявку на нашому сайті
+          </li>
+          <li class="cooperation-info">
+            Підпис договору. Фіксуємо усі домовленості, гарантії якості та термін виконання
+          </li>
+          <li class="cooperation-info">
+            Дизайн і проектування. Враховуємо усі ваші побажання, стиль життя та ідеї
+          </li>
+          <li class="cooperation-info">
+            Консультація спеціаліста. Консультація щодо сучасних матеріалів оздоблення, меблювання, сантехніки та освітлення
+          </li>
+          <li class="cooperation-info">
+            Ремонт. Здійснення ремонту згідно дизайн-проєкту
+          </li>
+          <li class="cooperation-info">
+            Комлектація. Комплектуємо матеріалами віп сегменту із спеціальною знижкою
+          </li>
+          <li class="cooperation-info">
+            Постобслуговування та гарантія. Ми продовжуємо догляд після реалізації проєкту
+          </li>
+        </ol>
+
+        <div class="button-container cooperation-button">
+          <div class="button">
+            <a href="#" class="button-link">
+              <h2 class="button-text">Розрахувати проєкт</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="design-prices" class="design-prices">
+    <div class="title-container section">
+      <h1 class="title">
+        Дизайн житлової та<br> комерційної нерухомості
+      </h1>
+    </div>
+
+    <div class="prices-container section">
+      <div class="residential">
+        <h1 class="price">20$</h1>
+        <div class="price-info">
+          <h1 class="price-text">Житлова нерухомість</h1>
+        </div>
+
+        <div class="residential-img">
+          <img class="residential-photo" src="/Photo/residential-img.png" alt="residential-img">
+        </div>
+        <ul class="types-of-services">
+          <li class="types">Планувальне рішення</li>
+          <li class="types">Візуалізація</li>
+          <li class="types">Технічна документація</li>
+          <li class="types">Специфікація по чистовим матеріалам</li>
+        </ul>
+      </div>
+
+      <div class="commercial">
+        <h1 class="price">35$</h1>
+        <div class="price-info">
+          <h1 class="price-text">Комерційна нерухомість</h1>
+        </div>
+
+        <div class="residential-img">
+          <img class="residential-photo" src="/Photo/Commercial.png" alt="residential-img">
+        </div>
+
+        <ul class="types-of-services">
+          <li class="types">Авторський нагляд</li>
+          <li class="types">Комплектація</li>
+          <li class="types">Декорування</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section ">
+      <ul class="types-of-services-tablet">
+        <li class="types">Планувальне рішення</li>
+        <li class="types">Візуалізація</li>
+        <li class="types">Технічна документація</li>
+        <li class="types">Авторський нагляд</li>
+        <li class="types">Специфікація по чистовим матеріалам</li>
+        <li class="types">Комплектація</li>
+        <li class="types">Декорування</li>
+      </ul>
+    </div>
+
+    <!-- <div class="section types-of-services">
+      <div class="services-info">
+        <h2 class="types">- Планувальне рішення</h2>
+        <h2 class="types">- Візуалізація</h2>
+        <h2 class="types">- Технічна документація</h2>
+        <h2 class="types">- Авторський нагляд</h2>
+      </div>
+      <div class="services-info">
+        <h2 class="types">- Специфікація по чистовим матеріалам</h2>
+        <h2 class="types">- Комплектація</h2>
+        <h2 class="types">- Декорування</h2>
+      </div>
+    </div> -->
+
+
+  </section>
+
+
+  <div class="footer">
+    <div class="footer-container">
+      <div class="adrress">
+        <h1>Адреса</h1>
+        <a target="_blank" class="adreess-link" href="https://www.google.com/maps/place/99+Staple+Hill+Rd,+Bristol+BS16+5AD,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.4818509,-2.5185188,17z/data=!3m1!4b1!4m5!3m4!1s0x48718fe6a41edcc5:0x1d95fb4b9dab9646!8m2!3d51.4818509!4d-2.5185188?shorturl=1">
+          Україна <br>
+            м.Київ, вул......, офис.....
+        </a>
+      </div>
+
+      <div class="social-network">
+        <div class="social-link">
+          <!-- <div class="telegram-box"> -->
+            <a class="link" target="_blank" href="https://telegram.com/">
+              <img src="./Photo/telegram.svg" alt="tviter">
+            </a>
+          <!-- </div> -->
+
+          <!-- <div class="instagram-box"> -->
+            <a target="_blank" class="link instagram" href="https://www.instagram.com/">
+              <img  src="./Photo/instagram.svg" alt="instagram">
+            </a>
+          <!-- </div> -->
+
+          <a target="_blank" class="link" href="https://www.facebook.com/">
+            <img src="./Photo/facebook.svg" alt="facebook">
+          </a>
+        </div>
+
+        <div class="title-box">
+          <div class="title-container">
+            <a href="#" class="title">
+              <img class="logo" src="/Photo/LogoPaloma.svg" alt="Paloma Logo">
+            </a>
+
+            <p class="copyring">
+              Copyright © 2024
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <a class="about-link" href="#cooperation">
+          <h1>Співпраця</h1>
+        </a>
+          <h2 class="copyring2">
+            Copyright © 2024
+          </h2>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- <section class="cooperation">
+    <div class="cooperation__foto">
+    </div>
+
+    <div class="cooperation__info">
+      <h1 class="title section">
+        Як відбувається співробітництво?
+      </h1>
+
+    </div>
+
+  </section> -->
 
 
 
 
 
   <!-- #region all sections-->
-  <section id="special-ofer" class="section-special-ofer">
+  <!-- <section id="special-ofer" class="section-special-ofer">
   </section>
   <section id="collaboration" class="section-collaboration">
   </section>
@@ -301,7 +520,7 @@
   <section id="services-prices" class="section-services-prices">
   </section>
   <section id="footer" class="footer">
-  </section>
+  </section> -->
   <!-- #endregion -->
 
 
@@ -332,5 +551,6 @@
     </ul>
 
   </section> -->
+</div>
 </body>
 </html>

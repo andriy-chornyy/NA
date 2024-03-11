@@ -1,9 +1,21 @@
 .title {
   font-size: 25px;
-  // padding-left: 15px;
+
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 700;
+
+  line-height: 35px;
+
+  @include onTablet {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  // @include onDesktop {
+  //   line-height: 40px;
+  // }
+
 }
 
 .title__white {
@@ -21,6 +33,7 @@
 h2 {
   font-size: 22;
   font-weight: 600;
+  font-family: "Inter", sans-serif;
 }
 
 p {

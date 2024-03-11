@@ -1,0 +1,87 @@
+.cooperation {
+  background-color: white;
+}
+
+.cooperation-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.cooperation-icon-img {
+  height: 50px;
+  width: 50px;
+}
+
+.cooperation-info {
+  line-height: 28px;
+}
+
+.cooperation-container {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.cooperation-list {
+  padding-left: 25px;
+  // list-style-type: none;
+
+  @include onTablet {
+    padding-left: 45px;
+    // width: 50%;
+  }
+
+  @include onDesktop {
+    display: none;
+  }
+}
+
+.cooperation-list-onDesktop {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+    padding-left: 45px;
+
+  }
+}
+.cooperation-button {
+  display: none;
+
+  @include onTablet {
+    padding-top: 15px;
+  }
+
+  @include onDesktop {
+    display: flex;
+    padding-bottom: 7px;
+  }
+}
+
+.info-container {
+  @include onDesktop {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+  }
+}
+
+
+.cooperation-foto {
+  width: 100%;
+  height: auto;
+}
+
+.cooperation-img {
+  display: none;
+  width: 50%;
+
+  @include onTablet {
+    display: block;
+  }
+
+  // @include onDesktop {
+  //   max-width: 1440px;
+  //   padding: 20px 70px;
+  // }
+ }
