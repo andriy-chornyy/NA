@@ -10,6 +10,10 @@
 
   width: 90px;
   justify-content: space-between;
+
+  @include onTablet {
+    align-items: center;
+  }
 }
 
 .icon--phone {
@@ -35,20 +39,10 @@
   margin-right: 5px;
 }
 
-.icon--close {
-  background-image: url(/Photo/close.svg);
-
-  height: 30px;
-  width: 30px;
-  margin-top: 4px;
-  margin-right: 5px;
-}
-
 .icon--galochka {
   background-image: url(/Photo/galochka-White.svg);
   margin-bottom: 3px;
   height: 25px;
   width: 25px;
   color: white;
-  // display: inline;
 }

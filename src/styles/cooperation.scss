@@ -12,22 +12,23 @@
   width: 50px;
 }
 
-.cooperation-info {
-  line-height: 28px;
-}
-
 .cooperation-container {
   display: flex;
-  // justify-content: space-between;
+  @include onDesktop {
+    gap: 15px;
+  }
+}
+
+.cooperation-title {
+  width: 100%;
+  text-align: end;
 }
 
 .cooperation-list {
   padding-left: 25px;
-  // list-style-type: none;
 
   @include onTablet {
     padding-left: 45px;
-    // width: 50%;
   }
 
   @include onDesktop {
@@ -41,35 +42,48 @@
   @include onDesktop {
     display: block;
     padding-left: 45px;
-
   }
 }
+
 .cooperation-button {
   display: none;
 
   @include onTablet {
     padding-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.nonTablet{
+  @include onTablet {
+  display: none;
   }
 
   @include onDesktop {
-    display: flex;
-    padding-bottom: 7px;
+  display: flex;
+  }
+}
+
+.nonDesktop{
+  @include onDesktop {
+  display: none;
   }
 }
 
 .info-container {
-  @include onDesktop {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  // width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include onTablet {
     width: 50%;
-    justify-content: space-between;
   }
 }
 
-
 .cooperation-foto {
   width: 100%;
-  height: auto;
 }
 
 .cooperation-img {
@@ -77,11 +91,6 @@
   width: 50%;
 
   @include onTablet {
-    display: block;
+    display: flex;
   }
-
-  // @include onDesktop {
-  //   max-width: 1440px;
-  //   padding: 20px 70px;
-  // }
  }

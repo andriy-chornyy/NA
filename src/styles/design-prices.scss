@@ -2,117 +2,213 @@
   background-color: white;
 }
 
-.prices-container {
-  @include onTablet {
-    display: flex;
-    gap: 15px;
-  }
-
-    @include onDesktop {
-   justify-content: space-between;
-  }
-}
-// .title {
-//   letter-spacing: 0em;
-// }
-
-.price-info {
+.prices__inner {
+  box-sizing: border-box;
   display: flex;
-  // justify-content: space-between;
-  align-items: center;
+  // gap: 1vw;
+
+  @include onTablet {
+    height: 300px;
+  }
+
+  @include onDesktop {
+    height: 400px;
+  }
+}
+
+.prices__lside {
+  width: 48%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 0 bottom 0;
+  position: relative;
+  z-index: 0;
+
+  @include onTablet {
+    width: 50%;
+  }
+}
+
+.prices__lside::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7); /* Затемненный цвет: черный с прозрачностью 50% */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lside-container {
+  width: 100%;
+  height: 100%;
+}
+
+.button-box {
+  display: flex;
+  width: 100%;
   justify-content: center;
+  position: absolute;
+  z-index: 3;
+  bottom: 15px;
+
+  .b-size {
+    width: 140px;
+    height: 36px;
+    box-sizing: border-box;
+    border: solid 1px white;
+
+    @include onTablet {
+      width: 240px;
+      height: 50px;
+    }
+
+    .button-link {
+      display: flex;
+      align-items: center;
+    }
+
+    .b-text {
+      color: white;
+    }
+  }
+}
+
+.prices__rside {
+  box-sizing: border-box;
+  padding-left: 1px;
+  width: 52%;
+  background-color: #F4F3F3;
+  border-top: solid 1px black;
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+
+  @include onTablet {
+    padding-left: 10px;
+    width: 50%;
+  }
+
+  @include onDesktop {
+    padding-left: 25px;
+  }
+}
+
+.rside-title {
+  padding: 10px 10px 10px 17px;
+}
+
+.prices__type {
+  background-color: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(5px);
+  display: block;
   width: 100%;
-  height: 40px;
-  background-color: #C5BCAE;
+  position: absolute;
+  z-index: 2;
 }
 
-.residential {
-  text-align: center;
-  // padding-bottom: 15px;
-  @include onTablet {
-    max-width: 50%;
-    min-width: 325px;
-  }
+.lside-title {
+  padding: 10px 15px;
+  color: white;
 
-  // @include onDesktop {
-  //   display: none;
-  // }
-}
-
-.commercial {
-  text-align: center;
-  // padding-bottom: 15px;
   @include onTablet {
-    max-width: 50%;
-    min-width: 325px;
+    text-align: center;
   }
 }
 
-.price {
-  // padding-left: 20px;
-  font-size: 32px;
-  font-weight: bold;
-  color: #464646;
+.prices__sum {
+  display: flex;
 
-  @include onTablet {
-    font-size: 40px;
-    padding-left: 0;
-  }
-}
-
-.price-text {
-  // padding-right: 5px;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.residential-photo {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
   width: 100%;
-  height: auto;
-}
 
-.residential-img {
-  @include onTablet {
-    padding-bottom: 20px;
+  .meter {
+    color:rgb(197, 179, 177);
   }
-}
 
-.types-of-services {
-  display: none;
-  list-style-type: none;
+  .price {
+    color: white;
+    padding: 10px 5px;
 
-  @include onTablet {
-    display: flex;
-    flex-direction: column;
-  }
-}
+    @include onTablet {
+      font-size: 40px;
+    }
 
-.types-of-services-tablet {
-  list-style-type: none;
-
-  @include onTablet {
-    display: flex;
-    flex-direction: column;
-    display: none;
-  }
-}
-
-.types:before {
-  content: "–";
-  margin-right: 0.5em;
-}
-
-.services-info {
-  @include onTablet {
-  width: 50%;
-  }
-}
-
-.types {
-
-  text-align: start;
     @include onDesktop {
-    font-size: 22px;
-    font-weight: 600;
+      font-size: 60px;
+    }
   }
 }
+
+ul {
+  list-style-type: none;
+}
+
+.check, .uncheck {
+  position: relative;
+  padding-left: 17px; /* Отступ слева для размещения изображения маркера */
+
+  @include onTablet {
+    padding-left: 25px;
+  }
+}
+
+.check::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  // top: 20%; /* Размещаем по вертикали по центру */
+  // transform: translateY(-5%); /* Выравниваем по вертикали по центру */
+  width: 16px; /* Ширина изображения маркера */
+  height: 16px; /* Высота изображения маркера */
+  background-image: url("../Photo/Galochka.svg"); /* Путь к изображению маркера */
+  // background-image: url("./Photo/check.svg");
+  background-size: cover; /* Растягиваем изображение маркера    #C5B3B1*/
+
+  @include onTablet {
+    transform: translateY(-25%);
+    width: 25px;
+    height: 25px;
+  }
+
+  @include onDesktop {
+    transform: translateY(-10%);
+  }
+}
+
+.uncheck {
+  color: #C5B3B1;
+}
+
+.uncheck::before {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  transform: translateY(10%);
+  width: 15px; /* Ширина изображения маркера */
+  height: 15px; /* Высота изображения маркера */
+  background-image: url("../Photo/closeIcon.svg");
+  background-size: cover;
+
+  @include onTablet {
+    transform: translateY(20%);
+    left: 2px;
+  }
+
+  @include onDesktop {
+    left: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+
+
+
+
+

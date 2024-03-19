@@ -1,20 +1,68 @@
 .our-approach {
   background-color: white;
 }
+
+.our-approach-info {
+  @include onTablet {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.approach-container {
+  @include onTablet {
+    width: 65%;
+  }
+}
+
+.our-approach-title {
+  width: 100%;
+  text-align: end;
+}
+
+.button-container {
+  justify-content: center;
+  @include onTablet {
+    justify-content: end;
+  }
+}
+
+.tablet-approach {
+  display: none;
+
+  @include onTablet {
+    display: block;
+    width: 35%;
+  }
+}
+
 .our-approach-img {
   width: 100%;
   max-width: 100%;
-  // position: relative;
-  // overflow: hidden;
+
+  @include onTablet {
+    display: none;
+  }
+}
+
+.info-block {
+  @include onTablet {
+    display: flex;
+  }
 }
 
 .approach-icon {
   display: flex;
   justify-content: center;
 }
+
 .approach-icon-img {
   height: 50px;
   width: 50px;
+
+  @include onTablet {
+    display: none;
+  }
 }
 
 .img {
@@ -23,26 +71,63 @@
   display: block;
 }
 
-.info {
-  display: inline;
-  font-style: italic;
+.tablet-img {
+  display: none;
+
+  @include onTablet {
+    display: block;
+    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
 }
 
-// .our-approach-info{
-//   padding: 15px 15px 5px;
-// }
+.info {
+  display: inline;
+
+  @include onTablet {
+    display: block;
+
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+.none-tablet {
+  @include onTablet {
+    display: none;
+  }
+}
+
+.bardack-photo {
+  display: none;
+
+  @include onTablet {
+    display: block;
+    width: 100%;
+  }
+}
 
 .content {
   display: inline;
-  padding-right: 10px;
+  // padding-right: 10px;
+
+  @include onTablet {
+    display: block;
+    // font-size: 30px;
+    padding: 0 0 20px 0;
+  }
 }
 
 .container-our-approach-info {
   margin-bottom: 20px;
-  // display: flex;
+
+  // @include onTablet {
+  //   margin-bottom: 0;
+  // }
 }
 
-.krug-img {
-  height: 30px;
-  width: 30px;
+.info-tablet {
+  padding-bottom: 20px;
 }
+

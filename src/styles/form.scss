@@ -1,29 +1,10 @@
 .form {
   display: block;
-  // @include onMobile {
-  //   justify-content: center;
-  // }
-
-  @include onTablet {
-    // display: flex;
-    // padding: 35px;
-
-  }
-
-  @include onDesktop {
-    // margin-bottom: 54px;
-  }
 }
-
-// .form-title {
-//   display: flex;
-//   justify-content: center;
-
-// }
 
 .form-text {
   color: white;
-  font-size: 12px;
+  // font-size: 16px;
 }
 
 .form-info {
@@ -31,46 +12,36 @@
   align-items: flex-end;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+
+  @include onTablet {
+    justify-content: start;
+  }
+}
+
 .message-us {
-  // margin: 0 auto;
-  // max-width: 1440px;
-  // display: flex;
-  // flex-direction: column;
-  // position: relative;
-
-  // @include onDesktop {
-  //   justify-content: space-around;
-  //   margin-bottom: 54px;
-  // }
-
   .questions-info-box {
     padding-top: 30px;
 
     @include onTablet {
       display: flex;
-      // justify-content: space-between;
       gap: 85px;
-      // padding-top: 20px;
     }
 
     @include onDesktop {
       width: 100%;
-
       max-width: 1170px;
-
       gap: 100px;
     }
 
     .questions-container {
-      // margin-right: 30px;
       display: flex;
       flex-direction: column;
 
       @include onTablet {
         width: 45%;
-        // width: 50wh;
-        // max-width: 371px;
-        // margin-right: 142px;
       }
 
       @include onDesktop {
@@ -81,24 +52,23 @@
         padding-bottom: 40px;
       }
 
-      .message-us {
-        color: #fff;
-        font-size: 24px;
-        // line-height: 36px;
-        // text-align: left;
-        padding-bottom: 25px;
+      .message-form {
         box-sizing: border-box;
+
+        .message-form-text {
+          color: #fff;
+          padding-bottom: 30px;
+        }
 
         .textarea {
           padding: 4px 2px 4px 2px;
         }
 
         .form-input {
-          font-family: "Manrope", sans-serif;
+          color: white;
           font-size: 16px;
           line-height: 150%;
-          color: #eee5e5;
-          // color: rgba(255, 255, 255, 0.3);
+
           width: 99%;
           background-color: transparent;
           border: none;
@@ -112,7 +82,6 @@
         .form-input:active {
           outline: none;
           border-bottom: 1px solid rgba(251, 251, 251, 0.763);
-          // border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .form-input:invalid {
@@ -126,9 +95,8 @@
         }
 
         .form-button {
-
-          font-size: 15px;
-          line-height: 48px;
+          // font-size: 25px;
+          // line-height: 48px;
           text-transform: uppercase;
           color: rgb(0, 0, 0);
           border: 1px solid transparent;
@@ -137,6 +105,12 @@
           transition: all 0.5s;
         }
 
+        // .button-text1 {
+        //   color: black;
+        //   font-family: 'Inter', sans-serif;
+        //   font-size: 15px;
+        //   font-weight: 900;
+        // }
 
         .form-button:hover {
           background-color: rgba(3, 131, 158, 0.5);
@@ -149,11 +123,8 @@
       display: none;
 
       @include onTablet {
-        // padding-top: 88px;
         display: block;
-
         width: 45%;
-
         max-width: 270px;
       }
 

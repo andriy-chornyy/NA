@@ -1,5 +1,9 @@
 .footer {
-  padding-top: 50px;
+  padding-top: 35px;
+
+  @include onTablet {
+    padding-top: 50px;
+  }
 
   .footer-container {
     margin: 0 auto;
@@ -16,11 +20,8 @@
       padding: 0;
     }
 
-    h1 {
+    h2 {
       color: white;
-      font-size: 24px;
-      letter-spacing: 0.15em;
-      padding-bottom: 10px;
 
       @include onTablet {
         padding-bottom: 20px;
@@ -31,23 +32,22 @@
       }
     }
 
-    .adreess-link,
-    .about-link {
+    .contact-link, .about-link {
       transition: all 0.5s;
       text-decoration: none;
       color: white;
       max-width: 170px;
 
       &:hover {
-        color: #03839e;
+        color: #887676;
+        border-bottom: 1px solid #ffffff;;
       }
     }
 
-    .adrress,
-    .about {
+    .adrress, .about {
       text-decoration: none;
       color: #000;
-      max-width: 155px;
+      max-width: 175px;
 
       @include onMobile {
         display: none;
@@ -58,16 +58,24 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      width: 250px;
+      width: 265px;
+
+      @include onTablet {
+        width: 280px;
+      }
 
       .social-link {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 45px;
+        padding-bottom: 35px;
 
         @include onTablet {
-          gap: 75px;
+          gap: 52px;
+        }
+
+        @include onDesktop {
+          gap: 65px;
         }
       }
 
@@ -90,10 +98,7 @@
           text-align: center;
           border-top: 1px solid transparent;
           flex-direction: column;
-
-          &:hover {
-            border-top: 1px solid black;
-          }
+          padding-top: 10px;
 
           @include onMobile {
             padding-bottom: 30px;
@@ -116,15 +121,29 @@
 
         .title {
           width: 100%;
-          display: block;
-          font-family: "Bebas Neue", sans-serif;
-          font-size: 36px;
-          letter-spacing: 0.15em;
-          line-height: 54px;
-          color: white;
-          text-decoration: none;
-          padding-bottom: 15px;
         }
+      }
+
+      .footer-logo {
+        position: relative;
+        width: fit-content;
+      }
+
+      .footer-logo:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #f1f1f1;
+        transform: scaleX(0);
+        transition: transform 0.5s ease;
+      }
+
+      .footer-logo:hover::before {
+        transform: scaleX(1);
       }
 
       .link {
@@ -148,7 +167,5 @@
 
   .copyring2 {
     color: white;
-    font-size: 16px;
-    font-weight: 100;
   }
 }

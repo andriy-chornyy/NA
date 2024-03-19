@@ -1,0 +1,87 @@
+.services-and-prices {
+  background-color: white;
+}
+
+.services-and-prices-container {
+  height: max-content;
+
+  @include onTablet {
+    align-items: stretch;
+    padding: 0 35px;
+    padding-bottom: 35px;
+    display: flex;
+    gap: 30px;
+  }
+
+  @include onDesktop {
+    max-width: 1440px;
+    padding: 0 70px 35px;
+  }
+}
+
+.services-container {
+  padding: 15px;
+
+  @include onTablet {
+    align-items: stretch;
+    display: flex;
+    padding: 0px;
+    width: 50%;
+  }
+
+  @include onDesktop {
+    max-width: 1440px;
+  }
+}
+
+.service {
+  display: flex;
+  align-items: stretch;
+  background: #F4F3F3;
+  box-sizing: border-box;
+  border: solid 1px black;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.service-name {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+}
+
+.price-form {
+    padding: 0 25px 10px 25px;
+
+  @include onTablet {
+    padding: 0 25px 15px 25px;
+  }
+}
+
+.price-box {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  height: 55px;
+}
+
+.price-box-text {
+  color: white;
+  padding: 0 25px;
+  // font-size: 32px;
+  font-weight: 400;
+}
+
+.commercial-box {
+  display: none;
+
+  @include onTablet {
+    display: block;
+  }
+}

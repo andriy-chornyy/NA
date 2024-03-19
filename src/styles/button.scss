@@ -1,6 +1,5 @@
 .button-container {
   display: flex;
-  justify-content: center;
 }
 
 .button {
@@ -21,7 +20,6 @@
 
 
   @include onTablet {
-    // padding: 20px 35px;
     bottom: 20px;
     right: 35px;
   }
