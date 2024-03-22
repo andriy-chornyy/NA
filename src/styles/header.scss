@@ -7,8 +7,184 @@
 .header__top {
   position: relative;
   box-sizing: border-box;
+  overflow: hidden;
 
   height: 85%;
+
+    @include onTablet {
+    height: 83%;
+  }
+
+  .rSector {
+    // display: flex;
+    width: 100%;
+
+    .discount {
+      justify-content: end;
+      display: flex;
+      position: relative;
+      height: 48px;
+
+      bottom: -110px;
+
+      .discount-content {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(5px);
+
+        width: 274px;
+        height: 100%;
+        z-index: -1;
+        // right: 0;
+
+      // left: 10px;
+        position: absolute;
+
+        transform: skew(-35deg);
+
+        @include onTablet {
+          width: 295px;
+        }
+
+        @include onDesktop {
+          width: 330px;
+        }
+      }
+
+      .discount-box {
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+
+        @include onTablet {
+          padding-right: 39px;
+        }
+
+        @include onDesktop {
+          padding-right: 75px;
+        }
+      }
+
+      .discount-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1;
+        color: white;
+      }
+
+      .discount-info {
+        text-transform: lowercase;
+        font-size: 12px;
+        color: white;
+      }
+    }
+  }
+
+  /* Анимация для правого сектора */
+  .animate-on-visible.from-right .discount-content {
+    animation: slideRight 1s forwards;
+  }
+
+  .animate-on-visible.from-right .discount-box {
+    animation: slideRight 2s forwards;
+  }
+
+  .lSector {
+    display: flex;
+    // position: absolute;
+
+    .h-info {
+      bottom: -90px;
+      display: flex;
+      position: relative;
+      height: 48px;
+
+
+      @include onTablet {
+        height: 70px;
+      }
+
+      .h-info-content {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(5px);
+
+        width: 352px;
+        height: 100%;
+        z-index: -1;
+        left: -30px;
+        position: absolute;
+
+        transform: skew(-35deg);
+
+        @include onTablet {
+          left: -90px;
+          width: 550px;
+          height: 100%;
+        }
+
+        @include onDesktop {
+          left: -50px;
+        }
+      }
+
+      .h-info-box {
+        display: flex;
+        align-items: center;
+      }
+
+      .h-info-box-title {
+        padding-left: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1;
+
+        @include onTablet {
+          padding-left: 35px;
+        }
+
+        @include onDesktop {
+          padding-left: 70px;
+        }
+      }
+    }
+  }
+
+  .animate-on-visible.from-left .h-info {
+    animation: slideLeft 2s forwards;
+  }
+
+  /* Ключевые кадры анимации */
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    70% {
+      transform: translateX(0);
+    }
+    85% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(100%);
+    }
+    70% {
+      transform: translateX(0);
+    }
+    85% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 }
 
 .header-container {
@@ -31,6 +207,10 @@
   box-sizing: border-box;
   align-items: center;
   height: 15%;
+
+  @include onTablet {
+    height: 17%;
+  }
 }
 
 .title-container {
@@ -44,16 +224,23 @@
 
   @include onTablet {
     font-size: 14px;
-    width: 170px;
+    // width: 220px;
     color: white;
     display: block;
+    text-transform: uppercase;
   }
 
   @include onDesktop {
     font-size: 16px;
+    margin-left: 20px;
     width: 450px;
   }
 }
+
+
+
+
+
 /* #endregion header */
 
 /* #region menu */

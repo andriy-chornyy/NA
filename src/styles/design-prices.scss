@@ -2,17 +2,33 @@
   background-color: white;
 }
 
+.prices__inners-box {
+  @include onDesktop {
+    display: flex;
+    padding: 0 70px 0 70px;
+    gap: 30px;
+
+    .section {
+      padding: 0;
+    }
+
+    .prices__inners {
+      width: 100%;
+      height: 500px;
+    }
+  }
+}
+
 .prices__inner {
   box-sizing: border-box;
   display: flex;
-  // gap: 1vw;
 
   @include onTablet {
     height: 300px;
   }
 
   @include onDesktop {
-    height: 400px;
+    height: 500px;
   }
 }
 
@@ -89,12 +105,16 @@
   }
 
   @include onDesktop {
-    padding-left: 25px;
+    padding-left: 5px;
   }
 }
 
 .rside-title {
   padding: 10px 10px 10px 17px;
+
+  @include onDesktop {
+    padding-left: 25px;
+  }
 }
 
 .prices__type {

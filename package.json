@@ -17,6 +17,8 @@
   "author": "Mate Academy",
   "license": "GPL-3.0",
   "devDependencies": {
+    "@babel/core": "^7.24.1",
+    "@babel/preset-react": "^7.24.1",
     "@linthtml/linthtml": "^0.9.5",
     "@mate-academy/backstop-config": "^1.0.0",
     "@mate-academy/bemlint": "^0.1.1",

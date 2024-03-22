@@ -55,6 +55,27 @@
         </div>
       </div>
 
+      <div class="lSector animate-on-visible from-left">
+        <div class="h-info ">
+          <div class="h-info-content"></div>
+
+          <div class="h-info-box">
+            <h2 class="h-info-box-title">студія дизайну інтер’єру<br> та ремонту</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="rSector animate-on-visible from-right">
+        <div class="discount">
+          <div class="discount-content"></div>
+
+          <div class="discount-box">
+            <p class="discount-title">знижка від 10%<span class="discount-info"> на повный <br> пакет комплектації інтер’єру</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div class="button header--button">
         <a class="button-link" href="#projects">
           <h2 class="button-text">Реалізовані проєкти</h2>
@@ -108,7 +129,8 @@
         <h1 class="title__white onMobile">
           Реалізація проєктів<br>інтер'єра
         </h1>
-        <h1 class="title__white onTablet">
+
+        <h1 class="title__white onTablet-NonDesktop">
           Реалізація проєктів<br>
           <span class="normal">
             квартир
@@ -118,10 +140,29 @@
             будинків
           </span><br>
           та комерції
-          </span>
         </h1>
 
-        <p class="message">Від розробки дизайну<br>до ремонту і повної комплектації
+        <h1 class="title__white onDesktop">
+          ремонт
+          <span class="normal"> дизайн</span>
+          <span class="italic-bold"> і комплектація
+          </span><br> квартир <span class="normal">
+            будинків
+          </span>
+          <span class="italic-bold">
+            та комерціїйної</span> нерухомості
+        </h1>
+
+        <p class="message onTablet-NonDesktop">Реалізація
+          <span class="italic-bold">
+            будівельних</span><br>  проєктів від ідеї до<br> <span class="italic-bold">
+              повного оснащення</span>
+        </p>
+
+        <p class="message onDesktop">Реалізація
+          <span class="italic-bold">
+            будівельних</span> проєктів<br> від ідеї до <span class="italic-bold">
+              повного<br> оснащення</span>
         </p>
       </div>
     </div>
@@ -219,24 +260,6 @@
         нами<br> проєкти
       </h1>
     </div>
-
-    <!-- <div class="projects-container">
-      <ul class="projects__list section">
-        <li class="projects__list-item">
-          <a class="projects__link" href="">White Box</a>
-        </li>
-        <li class="projects__list-item">
-          <a class="projects__link" href="">Standart</a>
-        </li>
-        <li class="projects__list-item">
-          <a class="projects__link" href="">Premium</a>
-        </li>
-        <li class="projects__list-item">
-          <a class="projects__link" href="">Commercial</a>
-        </li>
-      </ul>
-    </div> -->
-
   </section>
 
   <section id="form" class="form">
@@ -366,7 +389,7 @@
 
     <div class="cooperation-container section">
       <div class="cooperation-img">
-        <img class="cooperation-foto" src="/Photo/cooperation.png" alt="Наш-підхід">
+        <!-- <img class="cooperation-foto" src="/Photo/cooperation3.jpg" alt="Наш-підхід"> -->
       </div>
 
       <div class="info-container">
@@ -394,7 +417,7 @@
           </li>
         </ol>
 
-        <ol class="onTablet">
+        <ol class="onTablet olP">
           <li class="cooperation-info">
             Консультація та прорахунок. Залиште заявку на нашому сайті
           </li>
@@ -437,7 +460,6 @@
   </section>
 
   <section id="design-prices" class="design-prices">
-  <!-- <div> -->
     <div class="title-container title-section">
       <h1 class="design-prices-title onMobile">
         Дизайн
@@ -452,96 +474,99 @@
       </h1>
     </div>
 
-    <div class="prices__inners section">
-      <div class="prices__inner">
-        <div
-          class="prices__lside"
-          style="background-image: url('./Photo/residential-img.png');">
+    <div class="prices__inners-box">
+      <div class="prices__inners section">
+        <div class="prices__inner">
+          <div
+            class="prices__lside"
+            style="background-image: url('./Photo/residential-img.png');">
 
-          <div class="lside-container">
-            <div class="prices__type">
-              <h2 class="lside-title">
-                Житлова нерухомість
-              </h2>
-            </div>
+            <div class="lside-container">
+              <div class="prices__type">
+                <h2 class="lside-title">
+                  Житлова нерухомість
+                </h2>
+              </div>
 
-            <div class="prices__sum">
-              <h1 class="price">20$</h1>
-              <p class="meter">/кв.м.</p>
-            </div>
+              <div class="prices__sum">
+                <h1 class="price">20$</h1>
+                <p class="meter">/кв.м.</p>
+              </div>
 
-            <div class="button-box">
-              <div class="button b-size">
-                <a class="button-link" href="#form">
-                  <p class="b-text">ОБРАТИ ТАРИФ</p>
-                </a>
+              <div class="button-box">
+                <div class="button b-size">
+                  <a class="button-link" href="#form">
+                    <p class="b-text">ОБРАТИ ТАРИФ</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="prices__rside">
+            <h2 class="rside-title">
+              Ви отримаєте
+            </h2>
+
+            <ul>
+              <li class="check">Планувальне рішення</li>
+              <li class="check">Візуалізація</li>
+              <li class="check">Технічна документація</li>
+              <li class="check">Специфікація по чистовим матеріалам</li>
+              <li class="uncheck">Авторський нагляд</li>
+              <li class="uncheck">Комплектація</li>
+              <li class="uncheck">Декорування</li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="prices__rside">
-          <h2 class="rside-title">
-            Ви отримаєте
-          </h2>
+      <div class="prices__inners section">
+        <div class="prices__inner">
+          <div class="prices__lside"
+            style="background-image: url('./Photo/Commercial.png');">
 
-          <ul>
-            <li class="check">Планувальне рішення</li>
-            <li class="check">Візуалізація</li>
-            <li class="check">Технічна документація</li>
-            <li class="check">Специфікація по чистовим матеріалам</li>
-            <li class="uncheck">Авторський нагляд</li>
-            <li class="uncheck">Комплектація</li>
-            <li class="uncheck">Декорування</li>
-          </ul>
+            <div class="lside-container">
+              <div class="prices__type">
+                <h2 class="lside-title">
+                  Комерційна нерухомість
+                </h2>
+              </div>
+
+              <div class="prices__sum">
+                <h1 class="price">35$</h1>
+                <p class="meter">/кв.м.</p>
+              </div>
+
+              <div class="button-box">
+                <div class="button b-size">
+                  <a class="button-link" href="#form">
+                    <p class="b-text">ОБРАТИ ТАРИФ</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="prices__rside">
+            <h2 class="rside-title">
+              Ви отримаєте
+            </h2>
+
+            <ul>
+              <li class="check">Планувальне рішення</li>
+              <li class="check">Візуалізація</li>
+              <li class="check">Технічна документація</li>
+              <li class="check">Специфікація по чистовим матеріалам</li>
+              <li class="check">Авторський нагляд</li>
+              <li class="check">Комплектація</li>
+              <li class="check">Декорування</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="prices__inners section">
-      <div class="prices__inner">
-        <div class="prices__lside"
-          style="background-image: url('./Photo/Commercial.png');">
-
-          <div class="lside-container">
-            <div class="prices__type">
-              <h2 class="lside-title">
-                Комерційна нерухомість
-              </h2>
-            </div>
-
-            <div class="prices__sum">
-              <h1 class="price">35$</h1>
-              <p class="meter">/кв.м.</p>
-            </div>
-
-            <div class="button-box">
-              <div class="button b-size">
-                <a class="button-link" href="#form">
-                  <p class="b-text">ОБРАТИ ТАРИФ</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="prices__rside">
-          <h2 class="rside-title">
-            Ви отримаєте
-          </h2>
-
-          <ul>
-            <li class="check">Планувальне рішення</li>
-            <li class="check">Візуалізація</li>
-            <li class="check">Технічна документація</li>
-            <li class="check">Специфікація по чистовим матеріалам</li>
-            <li class="check">Авторський нагляд</li>
-            <li class="check">Комплектація</li>
-            <li class="check">Декорування</li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </section>
 
   <section id="services-and-prices" class="services-and-prices">
@@ -786,6 +811,12 @@
 </body>
 </html>
 
+
+
+
+
+
+
 <!-- <!DOCTYPE html>
 <html lang="en" class="page">
 <head class="page">
@@ -795,7 +826,7 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.scss">
   <script
     defer
@@ -804,6 +835,7 @@
   >
   </script>
 </head>
+
 <body class="page__body">
   <div class="main">
   <header class="header">
@@ -827,12 +859,12 @@
             <div class="dropdown-content">
               <div class="a-dropdown-container">
                 <a class="a-dropdown-content" href="tel:+380989034042">
-                  <p class="a-text">+380 989 03 40 42</p>
+                  <p class="a-text">+38 098 849 78 58</p>
                 </a>
               </div>
               <div class="a-dropdown-container">
-                <a class="a-dropdown-content" href="tel:123-456-7890">
-                  <p class="a-text">+380 979 13 13 53</p>
+                <a class="a-dropdown-content" href="tel:+380954238827">
+                  <p class="a-text">+38 095 423 88 27</p>
                 </a>
               </div>
             </div>
@@ -842,8 +874,29 @@
         </div>
       </div>
 
+      <div class="lSector animate-on-visible from-left">
+        <div class="h-info ">
+          <div class="h-info-content"></div>
+
+          <div class="h-info-box">
+            <h2 class="h-info-box-title">студія дизайну інтер’єру<br> та ремонту</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="rSector animate-on-visible from-right">
+        <div class="discount">
+          <div class="discount-content"></div>
+
+          <div class="discount-box">
+            <p class="discount-title">знижка від 10%<span class="discount-info"> на повный <br> пакет комплектації інтер’єру</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div class="button header--button">
-        <a class="button-link" href="#">
+        <a class="button-link" href="#projects">
           <h2 class="button-text">Реалізовані проєкти</h2>
         </a>
       </div>
@@ -861,7 +914,7 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="#section-our-approach">наш підхід до реалізації проєктів</a>
+            <a class="nav__link" href="#our-approach">наш підхід до реалізації проєктів</a>
           </li>
 
           <li class="nav__item">
@@ -875,13 +928,13 @@
             <a class="nav__link" href="#special-ofer">офер для вас</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#collaboration">Співпраця з нами</a>
+            <a class="nav__link" href="#cooperation">Співпраця з нами</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#price-design">Ціни дезайн</a>
+            <a class="nav__link" href="#design-prices">Ціни дезайн</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#services-prices">Ціни послуги</a>
+            <a class="nav__link" href="#services-and-prices">Ціни послуги</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#footer">Наші контакти</a>
@@ -892,20 +945,65 @@
 
     <div class="header__bottom title-section">
       <div class="title-container">
-        <h1 class="title__white">
-          Реалізація проєктів<br> інтер&apos;єра
+        <h1 class="title__white onMobile">
+          Реалізація проєктів<br>інтер'єра
         </h1>
 
-        <p class="message">Від розробки дизайну<br>до ремонту і повної комплектації
+        <h1 class="title__white onTablet-NonDesktop">
+          Реалізація проєктів<br>
+          <span class="normal">
+            квартир
+          </span>
+
+          <span class="italic">
+            будинків
+          </span><br>
+          та комерції
+        </h1>
+
+        <h1 class="title__white onDesktop">
+          ремонт
+          <span class="normal"> дизайн</span>
+          <span class="italic-bold"> і комплектація
+          </span><br> квартир <span class="normal">
+            будинків
+          </span>
+          <span class="italic-bold">
+            та комерціїйної</span> нерухомості
+        </h1>
+
+        <p class="message onTablet-NonDesktop">Реалізація
+          <span class="italic-bold">
+            будівельних</span><br>  проєктів від ідеї до<br> <span class="italic-bold">
+              повного оснащення</span>
+        </p>
+
+        <p class="message onDesktop">Реалізація
+          <span class="italic-bold">
+            будівельних</span> проєктів<br> від ідеї до <span class="italic-bold">
+              повного<br> оснащення</span>
         </p>
       </div>
     </div>
   </header>
 
+  <button id="social-button" class="social-button">
+    <img id="buttonImage" src="./Photo/telegram.jpg" alt="Telegram icon">
+
+    <div class="social-icons">
+      <a target="_blank" class="link" href="https://www.facebook.com"><img src="./Photo/telegram.jpg" alt="Facebook"></a>
+      <a target="_blank" class="link" href="https://www.facebook.com"><img src="./Photo/viber.jpg" alt="Facebook"></a>
+    </div>
+  </button>
+
   <section id="our-approach" class="our-approach">
     <div class="title-container title-section">
-      <h1>
-        Наш підхід до<br> реалізації проєктів
+      <h1 class="our-approach-title">
+        Наш підхід до<br>
+        <span class="italic-bold normal">
+          реалізації
+        </span>
+         проєктів
       </h1>
     </div>
 
@@ -959,7 +1057,7 @@
     </div>
     <div class="button-container section">
       <div class="button">
-        <a href="#" class="button-link">
+        <a href="#form" class="button-link">
           <h2 class="button-text">
             Розрахувати проєкт
           </h2>
@@ -970,33 +1068,34 @@
 
   <section id="projects" class="projects">
     <div class="title-section title-container">
-      <h1>
+      <h1 class="onMobile">
         Реалізовані проєкти
       </h1>
-    </div>
 
-    <div class="projects-container">
-      <ul class="projects__list section">
-        <li class="projects__list-item">
-          <a class="projects__link" href="">White Box</a>
-        </li>
-        <li class="projects__list-item">
-          <a class="projects__link" href="">Standart</a>
-        </li>
-        <li class="projects__list-item">
-          <a class="projects__link" href="">Premium</a>
-        </li>
-        <li class="projects__list-item">
-          <a class="projects__link" href="">Commercial</a>
-        </li>
-      </ul>
+      <h1 class="onTablet">
+        <span class="italic-bold">
+          Реалізовані
+        </span>
+        нами<br> проєкти
+      </h1>
     </div>
   </section>
 
   <section id="form" class="form">
-    <h1 class="title__white title-container title-section title-center">
-      безкоштовно!
-    </h1>
+    <div class="title-section title-container center">
+      <h1 class="title__white onMobile ">
+        безкоштовно!
+      </h1>
+
+      <h1 class="title__white onTablet">
+        Наш <span class="italic normal"> спеціаліст</span>
+        приїде до<br>
+         вас на об'єкт
+         <span class="italic">
+          безкоштовно!
+         </span>
+      </h1>
+    </div>
 
     <div class="section form-container">
       <div class="form-info">
@@ -1022,16 +1121,16 @@
       <div class="message-us">
         <div class="questions-info-box" id="questions-info-box">
           <div class="questions-container">
-            <form action="#" class="message-form" id="message-form">
+            <form action="#" class="message-form" id="myForm">
               <h2 class="message-form-text">
                 Бажаєте залишити заявку на консультацію?
               </h2>
 
-              <input type="text" placeholder="Ваше ім'я" class="form-input" required="">
+              <input id="name" type="text" placeholder="Ваше ім'я" class="form-input" required="">
 
-              <input type="tel" placeholder="Номер телефона" class="form-input" required="">
+              <input id="phone" type="tel" placeholder="Номер телефона" class="form-input" required="">
 
-              <textarea name="message" placeholder="Повідомлення" rows="1" class="form-input textarea" required=""></textarea>
+              <textarea id="message" name="message" placeholder="Повідомлення" rows="1" class="form-input textarea" required=""></textarea>
 
               <div class="button-container">
                 <button href="#" type="submit" class="form-button button">
@@ -1050,12 +1149,13 @@
               </p>
 
               <div>
-                <a href="tel:+380979131353" class="contact-link">
-                  +38 097 913 13 53
+                <a href="tel:+380988497858" class="contact-link">
+                  +38 098 849 78 58
                 </a>
               </div>
-              <a href="tel:+380979131353" class="contact-link">
-                +38 097 913 13 53
+
+              <a href="tel:+380954238827" class="contact-link">
+                +38 095 423 88 27
               </a>
             </div>
 
@@ -1064,18 +1164,19 @@
                 Наша пошта
               </p>
 
-              <a href="mailto:palomaCompany@gmail.com" class="contact-link">
-                palomaCompany@gmail.com
+              <a href="mailto:paloma.kyiv.ua@gmail.com" class="contact-link">
+                paloma.kyiv.ua@gmail.com
               </a>
             </div>
 
             <div class="contact">
               <p class="contact-type">
-                  Наш офіс
+                Наш офіс
               </p>
 
-              <a target="_blank" href="https://goo.gl/maps/rtkaop6EfdUsvGz88" class="contact-link">
-                United Kingdom 99 Staple Hill Road, Bristol, BS16 5AD
+              <a target="_blank" class="contact-link" href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%B4%D0%BE%D0%BB%D0%B1%D1%83%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+6,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4166768,30.6123075,17.67z/data=!4m7!3m6!1s0x40d4c5755b08245f:0x216ac263607c2472!8m2!3d50.4166162!4d30.6138375!10e3!16s%2Fg%2F1tkp3hg_?entry=ttu">
+                Україна,
+                м.Київ<br> вул. Здолбунівська 6
               </a>
             </div>
           </div>
@@ -1084,20 +1185,34 @@
     </div>
   </section>
 
-  <section id="cooperation" class="cooperation">
+  <section id="offer" class="offer">
     <div class="title-container title-section">
       <h1>
-        Як відбувається<br> співробітництво?
+        Cпеціальній <span class="italic-bold">офер</span> для<br> наших
+        <span class="italic-bold">
+          замовників
+        </span>
+      </h1>
+    </div>
+  </section>
+
+  <section id="cooperation" class="cooperation">
+    <div class="title-container title-section">
+      <h1 class="cooperation-title">
+        Як відбувається<br>
+        <span class="italic-bold">
+          співробітництво?
+        </span>
       </h1>
     </div>
 
     <div class="cooperation-container section">
       <div class="cooperation-img">
-        <img class="cooperation-foto" src="/Photo/cooperation2.png" alt="Наш-підхід">
+
       </div>
 
       <div class="info-container">
-        <ol class="cooperation-list">
+        <ol class="cooperation-list onMobile">
           <li>
             Залишаєте заявку на нашому сайті
           </li>
@@ -1121,7 +1236,7 @@
           </li>
         </ol>
 
-        <ol class="cooperation-list-onDesktop">
+        <ol class="onTablet olP">
           <li class="cooperation-info">
             Консультація та прорахунок. Залиште заявку на нашому сайті
           </li>
@@ -1144,91 +1259,133 @@
             Постобслуговування та гарантія. Ми продовжуємо догляд після реалізації проєкту
           </li>
         </ol>
-
-        <div class="button-container cooperation-button">
+        <div class="button-container nonTablet cooperation-button">
           <div class="button">
-            <a href="#" class="button-link">
+            <a href="#form" class="button-link">
               <h2 class="button-text">Розрахувати проєкт</h2>
             </a>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="button-container nonDesktop cooperation-button">
+      <div class="button">
+        <a href="#form" class="button-link">
+          <h2 class="button-text">Розрахувати проєкт</h2>
+        </a>
+      </div>
+    </div>
   </section>
 
   <section id="design-prices" class="design-prices">
     <div class="title-container title-section">
-      <h1>
-        Дизайн житлової та<br> комерційної нерухомості
+      <h1 class="design-prices-title onMobile">
+        Дизайн
+        <span class="italic-bold">житлової</span> та<br> <span class="italic-bold">комерційної</span> нерухомості
+      </h1>
+
+      <h1 class="design-prices-title onTablet">
+        Ціни дизайн проекта для
+        <span class="italic-bold">житлової</span> та<br>
+        <span class="italic-bold">комерційної</span>
+        нерухомості
       </h1>
     </div>
 
-    <div class="prices-container section">
-      <div class="residential">
-        <h1 class="price">20$</h1>
-        <div class="price-info">
-          <h2>Житлова нерухомість</h2>
+    <div class="prices__inners-box">
+      <div class="prices__inners section">
+        <div class="prices__inner">
+          <div
+            class="prices__lside"
+            style="background-image: url('./Photo/residential-img.png');">
+
+            <div class="lside-container">
+              <div class="prices__type">
+                <h2 class="lside-title">
+                  Житлова нерухомість
+                </h2>
+              </div>
+
+              <div class="prices__sum">
+                <h1 class="price">20$</h1>
+                <p class="meter">/кв.м.</p>
+              </div>
+
+              <div class="button-box">
+                <div class="button b-size">
+                  <a class="button-link" href="#form">
+                    <p class="b-text">ОБРАТИ ТАРИФ</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="prices__rside">
+            <h2 class="rside-title">
+              Ви отримаєте
+            </h2>
+
+            <ul>
+              <li class="check">Планувальне рішення</li>
+              <li class="check">Візуалізація</li>
+              <li class="check">Технічна документація</li>
+              <li class="check">Специфікація по чистовим матеріалам</li>
+              <li class="uncheck">Авторський нагляд</li>
+              <li class="uncheck">Комплектація</li>
+              <li class="uncheck">Декорування</li>
+            </ul>
+          </div>
         </div>
-
-        <div class="residential-img">
-          <img class="residential-photo" src="/Photo/residential-img.png" alt="residential-img">
-        </div>
-        <ul class="types-of-services">
-          <li class="types">
-            Планувальне рішення
-          </li>
-
-          <li class="types">
-            Візуалізація
-          </li>
-
-          <li class="types">
-            Технічна документація
-          </li>
-
-          <li class="types">
-            Специфікація по чистовим матеріалам
-          </li>
-        </ul>
       </div>
 
-      <div class="commercial">
-        <h1 class="price">35$</h1>
-        <div class="price-info">
-          <h2>Комерційна нерухомість</h2>
+      <div class="prices__inners section">
+        <div class="prices__inner">
+          <div class="prices__lside"
+            style="background-image: url('./Photo/Commercial.png');">
+
+            <div class="lside-container">
+              <div class="prices__type">
+                <h2 class="lside-title">
+                  Комерційна нерухомість
+                </h2>
+              </div>
+
+              <div class="prices__sum">
+                <h1 class="price">35$</h1>
+                <p class="meter">/кв.м.</p>
+              </div>
+
+              <div class="button-box">
+                <div class="button b-size">
+                  <a class="button-link" href="#form">
+                    <p class="b-text">ОБРАТИ ТАРИФ</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="prices__rside">
+            <h2 class="rside-title">
+              Ви отримаєте
+            </h2>
+
+            <ul>
+              <li class="check">Планувальне рішення</li>
+              <li class="check">Візуалізація</li>
+              <li class="check">Технічна документація</li>
+              <li class="check">Специфікація по чистовим матеріалам</li>
+              <li class="check">Авторський нагляд</li>
+              <li class="check">Комплектація</li>
+              <li class="check">Декорування</li>
+            </ul>
+          </div>
         </div>
-
-        <div class="residential-img">
-          <img class="residential-photo" src="/Photo/Commercial.png" alt="residential-img">
-        </div>
-
-        <ul class="types-of-services">
-          <li class="types">
-            Авторський нагляд
-          </li>
-
-          <li class="types">
-            Комплектація
-          </li>
-
-          <li class="types">
-            Декорування
-          </li>
-        </ul>
       </div>
     </div>
 
-    <div class="section ">
-      <ul class="types-of-services-tablet">
-        <li class="list-info types">Планувальне рішення</li>
-        <li class="list-info types">Візуалізація</li>
-        <li class="list-info types">Технічна документація</li>
-        <li class="list-info types">Авторський нагляд</li>
-        <li class="list-info types">Специфікація по чистовим матеріалам</li>
-        <li class="list-info types">Комплектація</li>
-        <li class="list-info types">Декорування</li>
-      </ul>
-    </div>
   </section>
 
   <section id="services-and-prices" class="services-and-prices">
@@ -1417,11 +1574,11 @@
     </div>
   </section>
 
-  <div class="footer">
+  <div id="footer" class="footer">
     <div class="footer-container">
       <div class="adrress">
-        <h1>Адреса</h1>
-        <a target="_blank" class="adreess-link" href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%B4%D0%BE%D0%BB%D0%B1%D1%83%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+6,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4166768,30.6123075,17.67z/data=!4m7!3m6!1s0x40d4c5755b08245f:0x216ac263607c2472!8m2!3d50.4166162!4d30.6138375!10e3!16s%2Fg%2F1tkp3hg_?entry=ttu">
+        <h2>Адреса</h2>
+        <a target="_blank" class="contact-link" href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%B4%D0%BE%D0%BB%D0%B1%D1%83%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+6,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4166768,30.6123075,17.67z/data=!4m7!3m6!1s0x40d4c5755b08245f:0x216ac263607c2472!8m2!3d50.4166162!4d30.6138375!10e3!16s%2Fg%2F1tkp3hg_?entry=ttu">
           Україна,
           м.Київ<br> вул. Здолбунівська 6
         </a>
@@ -1429,13 +1586,17 @@
 
       <div class="social-network">
         <div class="social-link">
-          <a class="link" target="_blank" href="https://telegram.com/">
-            <img src="./Photo/telegram.svg" alt="tviter">
-          </a>
+          <!-- <div class="telegram-box">
+            <a class="link" target="_blank" href="https://telegram.com/">
+              <img src="./Photo/telegram.svg" alt="tviter">
+            </a>
+           </div> -->
 
-          <a target="_blank" class="link instagram" href="https://www.instagram.com/paloma_ua?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-            <img  src="./Photo/instagram.svg" alt="instagram">
-          </a>
+          <!-- <div class="instagram-box">
+            <a target="_blank" class="link instagram" href="https://www.instagram.com/paloma_ua?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+              <img  src="./Photo/instagram.svg" alt="instagram">
+            </a>
+           </div>
 
           <a target="_blank" class="link" href="https://www.facebook.com/">
             <img src="./Photo/facebook.svg" alt="facebook">
@@ -1443,7 +1604,7 @@
         </div>
 
         <div class="title-box">
-          <div class="title-container">
+          <div class="title-container footer-logo">
             <a href="#" class="title">
               <img class="logo" src="/Photo/LogoPaloma.svg" alt="Paloma Logo">
             </a>
@@ -1457,11 +1618,11 @@
 
       <div class="about">
         <a class="about-link" href="#cooperation">
-          <h1>Співпраця</h1>
+          <h2>Співпраця</h2>
         </a>
-          <h2 class="copyring2">
+          <p class="copyring2">
             Copyright © 2024
-          </h2>
+          </p>
       </div>
     </div>
   </div>

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setInterval(changeImageVisibility, 3000);
 });
 
-//coment функція яка відправляє данні форми
+// coment функція яка відправляє данні форми
 document.getElementById('myForm').addEventListener('submit', async function(event) {
   event.preventDefault(); // Зупинити стандартну подію подання форми
 
@@ -29,7 +29,7 @@ document.getElementById('myForm').addEventListener('submit', async function(even
     const response = await fetch('https://send-data-to-telegram.onrender.com/submit-form', {
       method: 'POST',
       headers: {
-          'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({ name, message, phone }),
     });
@@ -65,13 +65,14 @@ const images = [
 ];
 
 function startAnimation() {
-  buttonImage.style.width = '40px'
-  buttonImage.style.height = '40px'
+  buttonImage.style.width = '40px';
+  buttonImage.style.height = '40px';
 
   if (animationInterval === null) {
     animationInterval = setInterval(function() {
       currentIndex = (currentIndex + 1) % (images.length - 1);
       buttonImage.classList.add('scale-out');
+
       setTimeout(() => {
         buttonImage.src = images[currentIndex];
         buttonImage.classList.remove('scale-out');
@@ -79,7 +80,6 @@ function startAnimation() {
     }, 1500);
   }
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
   button = document.querySelector('#social-button');
@@ -109,8 +109,8 @@ document.addEventListener('DOMContentLoaded', function() {
       stopAnimation();
       currentIndex = images.length - 1;
 
-      buttonImage.style.width = '20px'
-      buttonImage.style.height = '20px'
+      buttonImage.style.width = '20px';
+      buttonImage.style.height = '20px';
     }
   });
 });
@@ -127,3 +127,43 @@ document.addEventListener('click', function(event) {
     currentIndex = 0;
   }
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Получаем все элементы с классом .animate-on-visible
+  const animateOnVisibleElements = document.querySelectorAll('.animate-on-visible');
+
+  // Для каждого такого элемента
+  animateOnVisibleElements.forEach(function(element) {
+    // Проверяем, если элемент видим в окне просмотра
+    if (isElementInViewport(element)) {
+      // Добавляем класс для запуска анимации
+      setTimeout(function() {
+        element.classList.add('visible');
+      }, 500); // Задержка в 0.5 секунды перед запуском анимации
+    }
+  });
+
+  // Добавляем обработчик события прокрутки страницы, чтобы запускать анимацию при прокрутке
+  window.addEventListener('scroll', function() {
+    animateOnVisibleElements.forEach(function(element) {
+      if (isElementInViewport(element)) {
+        element.classList.add('visible');
+      }
+    });
+  });
+
+});
+
+// Функция для проверки, виден ли элемент в окне просмотра
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}

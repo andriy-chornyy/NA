@@ -14,8 +14,9 @@
 
 .cooperation-container {
   display: flex;
+
   @include onDesktop {
-    gap: 15px;
+    gap: 30px;
   }
 }
 
@@ -79,14 +80,28 @@
 
   @include onTablet {
     width: 50%;
+
+    .olP {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      padding-inline-start: 30px;
+    }
   }
+
+  // @include
 }
 
-.cooperation-foto {
-  width: 100%;
-}
+// .cooperation-foto {
+//   width: 100%;
+
+// }
 
 .cooperation-img {
+  background-image: url(../Photo/cooperation3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+
   display: none;
   width: 50%;
 

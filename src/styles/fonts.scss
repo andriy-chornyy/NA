@@ -68,11 +68,31 @@ li {
   }
 }
 
+.onDesktop {
+  display: none;
+
+  @include onDesktop {
+    display: block;
+  }
+}
+
 .onTablet {
   display: none;
 
   @include onTablet {
     display: block;
+  }
+}
+
+.onTablet-NonDesktop {
+  display: none;
+
+  @include onTablet {
+    display: block;
+  }
+
+  @include onDesktop {
+    display: none;
   }
 }
 
