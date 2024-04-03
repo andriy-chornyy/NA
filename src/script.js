@@ -128,10 +128,7 @@ document.addEventListener('click', function(event) {
   }
 });
 
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
   // Получаем все элементы с классом .animate-on-visible
   const animateOnVisibleElements = document.querySelectorAll('.animate-on-visible');
 
@@ -154,16 +151,16 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
-
 });
 
 // Функция для проверки, виден ли элемент в окне просмотра
 function isElementInViewport(el) {
-  var rect = el.getBoundingClientRect();
+  const rect = el.getBoundingClientRect();
+
   return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    rect.top >= 0
+    && rect.left >= 0
+    && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    && rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }

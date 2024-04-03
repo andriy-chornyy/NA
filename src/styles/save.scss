@@ -1,0 +1,79 @@
+.save {
+  background-color: white;
+
+  .button-container {
+    justify-content: center;
+    padding-bottom: 15px;
+
+    @include onTablet {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.save-img {
+  // width: 100%;
+  // max-width: 100%;
+
+  // @include onTablet {
+  //   display: none;
+  // }
+
+  .img {
+    width: 100%;
+    height: auto;
+    // display: block;
+  }
+}
+
+.save-title {
+  width: 100%;
+  text-align: end;
+}
+
+.save-info {
+  gap: 20px;
+
+  @include onTablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include onDesktop {
+    gap: 30px;
+  }
+
+  .save-p {
+    padding-bottom: 20px;
+    @include onTablet {
+      width: 32%;
+      text-align: justify;
+    }
+  }
+
+  .save-middle {
+    display: flex;
+    padding-bottom: 20px;
+
+    @include onTablet {
+      flex-direction: column;
+      width: 32%;
+
+      // align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    .save-p-middle {
+      text-align: justify;
+    }
+
+    .button-container {
+      display: none;
+
+      @include onTablet {
+        justify-content: center;
+        display: flex;
+      }
+    }
+  }
+}

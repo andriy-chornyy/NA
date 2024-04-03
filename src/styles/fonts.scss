@@ -51,6 +51,10 @@ p {
   @include onTablet {
     font-size: 16px;
   }
+
+  @include onDesktop {
+    font-size: 18px;
+  }
 }
 
 li {
@@ -63,7 +67,7 @@ li {
   }
 
   @include onDesktop {
-    font-size: 22px;
+    font-size: 18px;
     padding-bottom: 15px;
   }
 }
