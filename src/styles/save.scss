@@ -12,18 +12,150 @@
 }
 
 .save-img {
-  // width: 100%;
-  // max-width: 100%;
+  position: relative;
+  overflow: hidden;
 
-  // @include onTablet {
-  //   display: none;
-  // }
+  .rSector {
+    display: block;
+    top: 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+
+    .discount {
+      justify-content: end;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      @include onTablet {
+        height: 70px;
+      }
+
+      .discount-content {
+        position: absolute;
+        transform: skew(-35deg);
+        background-color: rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgb(119, 114, 114);
+
+        width: 345px;
+        height: 100%;
+        z-index: -1;
+        right: -52px;
+
+        @include onTablet {
+          width: 470px;
+        }
+
+        @include onDesktop {
+          width: 525px;
+        }
+      }
+
+      .discount-box {
+        padding-right: 20px;
+
+        @include onTablet {
+          padding-right: 39px;
+        }
+
+        @include onDesktop {
+          padding-right: 75px;
+        }
+
+        .discount-title {
+          text-transform: uppercase;
+          // font-size: 16px;
+          font-weight: 600;
+          line-height: 1.1;
+          color: white;
+        }
+
+        .discount-info {
+          text-transform: lowercase;
+          font-size: 12px;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .rSectorBottom {
+    top: 18%;
+    z-index: 2;
+
+    @include onTablet {
+      top: 18%;
+    }
+
+    .discount {
+      height: 24px;
+
+      @include onTablet {
+        height: 50px;
+      }
+      .discount-content {
+        background-color: rgba(255, 255, 255, 0.45);
+        width: 275px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgb(219, 202, 202);
+
+        @include onTablet {
+          width: 380px;
+        }
+
+        @include onDesktop {
+          width: 410px;
+        }
+      }
+
+      .discount-box {
+
+        .discount-title {
+          color: black;
+          font-size: 16px;
+          font-weight: 800;
+
+          @include onTablet {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .animate-on-visible.from-right .discount {
+    animation: slideRight 2s forwards;
+  }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(100%);
+    }
+    70% {
+      transform: translateX(0);
+    }
+    85% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
   .img {
     width: 100%;
-    height: auto;
-    // display: block;
+    height: 100%;
+    // position: relative;
+    display: block;
+
+    @include onTablet {
+      height: 600px;
+    }
   }
+
 }
 
 .save-title {

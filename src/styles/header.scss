@@ -16,44 +16,38 @@
   }
 
   .rSector {
-    // display: flex;
-    width: 100%;
+    display: flex;
+    justify-content: end;
+    bottom: -19%;
+
+    position: relative;
+    height: 48px;
 
     .discount {
-      justify-content: end;
       display: flex;
-      position: relative;
-      height: 48px;
-
-      bottom: -110px;
+      align-items: center;
 
       .discount-content {
-        display: flex;
+        position: absolute;
+        transform: skew(-35deg);
         background-color: rgba(0, 0, 0, 0.45);
         backdrop-filter: blur(5px);
 
-        width: 274px;
+        width: 285px;
         height: 100%;
         z-index: -1;
-        // right: 0;
-
-        // left: 10px;
-        position: absolute;
-
-        transform: skew(-35deg);
+        right: -25px;
 
         @include onTablet {
-          width: 295px;
+          width: 305px;
         }
 
         @include onDesktop {
-          width: 330px;
+          width: 340px;
         }
       }
 
       .discount-box {
-        display: flex;
-        align-items: center;
         padding-right: 20px;
 
         @include onTablet {
@@ -63,50 +57,38 @@
         @include onDesktop {
           padding-right: 75px;
         }
-      }
 
-      .discount-title {
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 1;
-        color: white;
-      }
+        .discount-title {
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1;
+          color: white;
+        }
 
-      .discount-info {
-        text-transform: lowercase;
-        font-size: 12px;
-        color: white;
+        .discount-info {
+          text-transform: lowercase;
+          font-size: 12px;
+          color: white;
+        }
       }
     }
   }
 
-  /* Анимация для правого сектора */
-  .animate-on-visible.from-right .discount-content {
-    animation: slideRight 1s forwards;
-  }
-
-  .animate-on-visible.from-right .discount-box {
-    animation: slideRight 2s forwards;
-  }
-
   .lSector {
     display: flex;
-    // position: absolute;
+    bottom: -5%;
+    position: relative;
 
     .h-info {
-      bottom: -90px;
       display: flex;
-      position: relative;
       height: 48px;
-
 
       @include onTablet {
         height: 70px;
       }
 
       .h-info-content {
-        display: flex;
         background-color: rgba(255, 255, 255, 0.45);
         backdrop-filter: blur(5px);
 
@@ -121,7 +103,6 @@
         @include onTablet {
           left: -90px;
           width: 550px;
-          height: 100%;
         }
 
         @include onDesktop {
@@ -132,23 +113,28 @@
       .h-info-box {
         display: flex;
         align-items: center;
-      }
 
-      .h-info-box-title {
-        padding-left: 15px;
-        font-weight: 700;
-        text-transform: uppercase;
-        line-height: 1;
+        .h-info-box-title {
+          padding-left: 15px;
+          font-weight: 700;
+          text-transform: uppercase;
+          line-height: 1;
 
-        @include onTablet {
-          padding-left: 35px;
-        }
+          @include onTablet {
+            padding-left: 35px;
+          }
 
-        @include onDesktop {
-          padding-left: 70px;
+          @include onDesktop {
+            padding-left: 70px;
+          }
         }
       }
     }
+  }
+
+  /* Анимация для правого сектора */
+  .animate-on-visible.from-right .discount {
+    animation: slideRight 2s forwards;
   }
 
   .animate-on-visible.from-left .h-info {
@@ -217,6 +203,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  .ht {
+    line-height: 1.25;
+  }
 }
 
 .message {
@@ -237,10 +227,6 @@
   }
 }
 
-
-
-
-
 /* #endregion header */
 
 /* #region menu */
@@ -253,6 +239,7 @@
   box-sizing: border-box;
   padding: 25px 20px;
   height: 100vh;
+  width: 100%;
   background-color: #161412;
   z-index: 2;
 
@@ -261,6 +248,13 @@
 
   font-weight: 700;
   text-transform: uppercase;
+
+  @include onTablet {
+    width: 60%;
+  }
+  @include onDesktop {
+    width: 40%;
+  }
 }
 
 .menu:target {
@@ -269,6 +263,7 @@
 }
 
 .menu-container {
+  padding-top: 15px;
   padding-bottom: 55px;
   width: 100%;
   display: flex;
@@ -396,6 +391,14 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @include onTablet {
+    gap: 30px;
+  }
+
+  @include onDesktop {
+    gap: 25px;
+  }
 }
 /* #endregion */
 

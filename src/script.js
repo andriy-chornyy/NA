@@ -4,14 +4,108 @@ import telegramImage from './images/telegram.png';
 import viberImage from './images/viber.png';
 import closeImage from './images/close.png';
 
-import test1 from './images/test1.jpg';
-import test2 from './images/test2.jpg';
-import test3 from './images/test3.jpg';
-import test4 from './images/test4.jpg';
-import test5 from './images/test5.jpg';
-import test6 from './images/test6.jpg';
-import test7 from './images/test7.jpg';
-import test8 from './images/test8.jpg';
+
+import BS0 from './images/main1.jpg';
+import BS1 from './images/BS-1.jpg';
+import BS2 from './images/BS-2.jpg';
+import BS3 from './images/BS-3.jpg';
+import BS4 from './images/BS-4.jpg';
+
+import BF0 from './images/main2.jpg';
+import BF1 from './images/BF-1.jpg';
+import BF2 from './images/BF-2.jpg';
+import BF3 from './images/BF-3.jpg';
+import BF4 from './images/BF-4.jpg';
+import BF5 from './images/BF-5.jpg';
+import BF6 from './images/BF-6.jpg';
+import BF7 from './images/BF-7.jpg';
+import BF8 from './images/BF-8.jpg';
+import BF9 from './images/BF-9.jpg';
+import BF10 from './images/BF-10.jpg';
+import BF11 from './images/BF-11.jpg';
+import BF12 from './images/BF-12.jpg';
+import BF13 from './images/BF-13.jpg';
+import BF14 from './images/BF-14.jpg';
+import BF15 from './images/BF-15.jpg';
+import BF16 from './images/BF-16.jpg';
+import BF17 from './images/BF-17.jpg';
+import BF18 from './images/BF-18.jpg';
+import BF19 from './images/BF-19.jpg';
+import BF20 from './images/BF-20.jpg';
+import BF21 from './images/BF-21.jpg';
+import BF22 from './images/BF-22.jpg';
+import BF23 from './images/BF-23.jpg';
+
+import RES0 from './images/main3.jpg';
+import RES1 from './images/RES-1.jpg';
+import RES2 from './images/RES-2.jpg';
+import RES3 from './images/RES-3.jpg';
+import RES4 from './images/RES-4.jpg';
+import RES5 from './images/RES-5.jpg';
+import RES6 from './images/RES-6.jpg';
+import RES7 from './images/RES-7.jpg';
+import RES8 from './images/RES-8.jpg';
+import RES9 from './images/RES-9.jpg';
+import RES10 from './images/RES-10.jpg';
+import RES11 from './images/RES-11.jpg';
+import RES12 from './images/RES-12.jpg';
+import RES13 from './images/RES-13.jpg';
+import RES14 from './images/RES-14.jpg';
+import RES15 from './images/RES-15.jpg';
+import RES16 from './images/RES-16.jpg';
+import RES17 from './images/RES-17.jpg';
+import RES18 from './images/RES-18.jpg';
+
+import A0 from './images/main4.jpg';
+import A1 from './images/A-1.jpg';
+import A2 from './images/A-2.jpg';
+import A3 from './images/A-3.jpg';
+import A4 from './images/A-4.jpg';
+import A5 from './images/A-5.jpg';
+import A6 from './images/A-6.jpg';
+import A7 from './images/A-7.jpg';
+import A8 from './images/A-8.jpg';
+import A9 from './images/A-9.jpg';
+import A10 from './images/A-10.jpg';
+import A11 from './images/A-11.jpg';
+import A12 from './images/A-12.jpg';
+import A13 from './images/A-13.jpg';
+import A14 from './images/A-14.jpg';
+import A15 from './images/A-15.jpg';
+import A16 from './images/A-16.jpg';
+import A17 from './images/A-17.jpg';
+import A18 from './images/A-18.jpg';
+import A19 from './images/A-19.jpg';
+import A20 from './images/A-20.jpg';
+import A21 from './images/A-21.jpg';
+import A22 from './images/A-22.jpg';
+import A23 from './images/A-23.jpg';
+import A24 from './images/A-24.jpg';
+import A25 from './images/A-25.jpg';
+import A26 from './images/A-26.jpg';
+import A27 from './images/A-27.jpg';
+import A28 from './images/A-28.jpg';
+import A29 from './images/A-29.jpg';
+import A30 from './images/A-30.jpg';
+import A31 from './images/A-31.jpg';
+
+import CH0 from './images/main5.jpg';
+import CH1 from './images/CH-1.jpg';
+import CH2 from './images/CH-2.jpg';
+import CH3 from './images/CH-3.jpg';
+import CH4 from './images/CH-4.jpg';
+import CH5 from './images/CH-5.jpg';
+import CH6 from './images/CH-6.jpg';
+import CH7 from './images/CH-7.jpg';
+import CH8 from './images/CH-8.jpg';
+import CH9 from './images/CH-9.jpg';
+import CH10 from './images/CH-10.jpg';
+import CH11 from './images/CH-11.jpg';
+import CH12 from './images/CH-12.jpg';
+import CH13 from './images/CH-13.jpg';
+import CH14 from './images/CH-14.jpg';
+import CH15 from './images/CH-15.jpg';
+import CH16 from './images/CH-16.jpg';
 
 document.addEventListener('DOMContentLoaded', function() {
   const images = document.querySelectorAll('.header-image');
@@ -227,10 +321,10 @@ nextButton.addEventListener('click', function() {
   resetAutoSlide();
 });
 
-// Запускаємо автоматичне перелистування кожні 2 секунди
+// Запускаємо автоматичне перелистування кожні 5 секунди
 autoSlideInterval = setInterval(function() {
   plusIndex(1);
-}, 2000);
+}, 55000);
 
 // Функція для призупинення та знову запуску автоматичного перелистування
 function resetAutoSlide() {
@@ -238,7 +332,7 @@ function resetAutoSlide() {
 
   autoSlideInterval = setInterval(function() {
     plusIndex(1); // Запускаємо автоперемикання знову
-  }, 2000);
+  }, 55000);
 }
 
 // Функція plusIndex, яка викликає showImage зі зміненим значенням slideIndex
@@ -249,7 +343,7 @@ function plusIndex(n) {
 function startAutoSlide() {
   autoSlideInterval = setInterval(function() {
     plusIndex(1);
-  }, 2000);
+  }, 55000);
 }
 
 // Функція для призупинення автоматичного перелистування
@@ -347,37 +441,111 @@ const sliderContainer = document.getElementById('slider-container');
 // Масиви зображень для кожної кнопки
 const imagesForButtons = {
   button1: [
-    test1,
-    test2,
-    test3,
-    test4,
-    test5,
-    test6,
-    test7,
+    BS0,
+    BS1,
+    BS2,
+    BS3,
+    BS4,
   ],
   button2: [
-    test3,
-    test1,
-    test7,
-    test8,
+    BF0,
+    BF1,
+    BF2,
+    BF3,
+    BF4,
+    BF5,
+    BF6,
+    BF7,
+    BF8,
+    BF9,
+    BF10,
+    BF11,
+    BF12,
+    BF13,
+    BF14,
+    BF15,
+    BF16,
+    BF17,
+    BF18,
+    BF19,
+    BF20,
+    BF21,
+    BF22,
+    BF23,
   ],
   button3: [
-    test6,
-    test3,
-    test8,
-    test3,
+    RES0,
+    RES1,
+    RES2,
+    RES3,
+    RES4,
+    RES5,
+    RES6,
+    RES7,
+    RES8,
+    RES9,
+    RES10,
+    RES11,
+    RES12,
+    RES13,
+    RES14,
+    RES15,
+    RES16,
+    RES17,
+    RES18,
   ],
   button4: [
-    test8,
-    test2,
-    test6,
-    test3,
+    A0,
+    A1,
+    A2,
+    A3,
+    A4,
+    A5,
+    A6,
+    A7,
+    A8,
+    A9,
+    A10,
+    A11,
+    A12,
+    A13,
+    A14,
+    A15,
+    A16,
+    A17,
+    A18,
+    A19,
+    A20,
+    A21,
+    A22,
+    A23,
+    A24,
+    A25,
+    A26,
+    A27,
+    A28,
+    A29,
+    A30,
+    A31,
   ],
   button5: [
-    test7,
-    test8,
-    test3,
-    test1,
+    CH0,
+    CH1,
+    CH2,
+    CH3,
+    CH4,
+    CH5,
+    CH6,
+    CH7,
+    CH8,
+    CH9,
+    CH10,
+    CH11,
+    CH12,
+    CH13,
+    CH14,
+    CH15,
+    CH16,
   ],
 };
 
