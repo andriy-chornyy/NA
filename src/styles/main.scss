@@ -105,7 +105,7 @@ a {
     }
 
     @include onDesktop {
-      padding: 15px 0 15px 70px;;
+      padding: 15px 0 15px 10%;
     }
   }
 }
@@ -223,6 +223,7 @@ a {
   width: 100%;
   height: 600px;
   display: flex;
+  object-fit: contain;
 }
 
 
@@ -245,6 +246,9 @@ a {
   background: rgb(255, 255, 255);
   background: black;
   border-bottom: 2px solid #fff;
+  overflow: auto;
+  max-height: 600px;
+  z-index: 6;
 }
 
 .sub-imgs, .main-img {
@@ -433,4 +437,26 @@ a {
 
 .slider-button:hover {
   background-color: gray;
+}
+
+// scrollbar styles
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
 }
