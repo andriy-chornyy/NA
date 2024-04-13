@@ -131,7 +131,11 @@ document.getElementById('myForm').addEventListener('submit', async function(even
   const name = document.getElementById('name').value;
   const message = document.getElementById('message').value;
   const phone = document.getElementById('phone').value;
+  const sendButton = document.getElementById('send-button');
+  const sendButtonWrapper = document.getElementById('send-button-wrapper');
 
+  sendButtonWrapper.style.cursor = 'wait';
+  sendButton.style.pointerEvents = 'none';
   try {
     // Виконати POST-запит на сервер і передати дані
     const response = await fetch('https://send-data-to-telegram.onrender.com/submit-form', {
@@ -148,7 +152,7 @@ document.getElementById('myForm').addEventListener('submit', async function(even
     }
 
     // Вивести повідомлення про успіх
-    alert('Дані успішно відправлено у чат Telegram!');
+    alert('Заявка успішно відправлена! Очікуйте, будь ласка, на відповідь у telegram!');
 
     // Очистити поля форми
     this.reset();
@@ -156,6 +160,9 @@ document.getElementById('myForm').addEventListener('submit', async function(even
     // Вивести повідомлення про помилку у разі неуспішної відправки
     console.error('Сталася помилка:', error);
     alert('Виникла помилка при відправленні даних');
+  } finally {
+    sendButtonWrapper.style.cursor = 'pointer';
+    sendButton.style.pointerEvents = 'all';
   }
 });
 
@@ -352,7 +359,7 @@ function pauseAutoSlide() {
   clearInterval(autoSlideInterval);
 }
 
-// pauseAutoSlide()
+// pauseAutoSlide();
 
 // SECOND SLIDER
 
@@ -578,7 +585,11 @@ mainSliderButtons.forEach((button, index) => {
     sliderContainer.style.display = 'block';
     console.log('test');
     // Прокручуємо до контейнера другого слайдера
-    sliderContainer.scrollIntoView({ behavior: 'smooth' });
+    // sliderContainer.scrollIntoView({ behavior: 'smooth' });
+
+    setTimeout(() => {
+      sliderContainer.scrollIntoView({ behavior: 'smooth' });
+    }, 500);
 
     setTimeout(() => {
       onSecondSliderShow();
@@ -629,7 +640,7 @@ function onHideSecondSlider() {
     section.style.pointerEvents = 'auto'; // Включаємо pointer-events
   });
   sliderContainer.style.display = 'none'; // Приховуємо другий слайдер
-  document.getElementById('main-slider').scrollIntoView({ behavior: 'smooth' }); // Прокручуємо до основного слайдера
+  document.getElementById('projects').scrollIntoView({ behavior: 'smooth' }); // Прокручуємо до основного слайдера
   document.removeEventListener('click', onClickOutsideSecondSlider);
   startAutoSlide();
 }

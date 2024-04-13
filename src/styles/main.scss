@@ -224,6 +224,11 @@ a {
   height: 600px;
   display: flex;
   object-fit: contain;
+
+  @include onMobile {
+    height: 500px;
+  }
+
 }
 
 
@@ -238,7 +243,7 @@ a {
 
 .container {
   position: relative;
-  max-width: 660px;
+  max-width: 800px;
   height: auto;
   margin: auto;
   padding-top: 3vh;
@@ -459,4 +464,15 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: grey;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

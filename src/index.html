@@ -318,13 +318,14 @@
 
               <input id="name" type="text" placeholder="Ваше ім'я" class="form-input" required="">
 
-              <input id="phone" type="tel" placeholder="Номер телефона" class="form-input" required="">
+              <input id="phone" type="number" placeholder="Номер телефона" class="form-input" required="">
 
-              <textarea id="message" name="message" placeholder="Повідомлення" rows="1" class="form-input textarea" required=""></textarea>
+              <textarea style="margin-bottom: 0" id="message" name="message" placeholder="Повідомлення" rows="1" class="form-input textarea" required=""></textarea>
 
-              <div class="button-container">
-                <button href="#" type="submit" class="form-button button">
-                  <h2 class="button-text-black">
+              <div style="color: grey; margin-bottom: 25px; font-size: 12px">Відправлення заявки може зайняти до 1 хвилини!</div>
+              <div id="send-button-wrapper" class="button-container">
+                <button id="send-button" href="#" type="submit" class="form-button button">
+                  <h2 class="button-text-black" title="Відправлення заявки може зайняти до 1 хвилини!">
                     НАДІСЛАТИ
                   </h2>
                 </button>
