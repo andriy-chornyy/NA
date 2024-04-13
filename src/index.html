@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.scss">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <script
     defer
     type="text/javascript"
@@ -171,8 +173,10 @@
     <img id="buttonImage" src="./Photo/telegram.jpg" alt="Telegram icon">
 
     <div class="social-icons">
-      <a target="_blank" class="social-icons__link" href="https://www.facebook.com"><img src="images/telegram.jpg" alt="Facebook"></a>
-      <a target="_blank" class="social-icons__link" href="https://www.facebook.com"><img src="images/viber.jpg" alt="Facebook"></a>
+      <span style="cursor: not-allowed">
+              <a target="_blank" class="social-icons__link social-icons__link--disabled" href="https://www.facebook.com"><img src="images/telegram.jpg" alt="Telegram"></a>
+      </span>
+      <a target="_blank" class="social-icons__link" href="https://www.instagram.com/paloma_ua?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"><img src="images/instagram.png" alt="Instagram"></a>
     </div>
   </button>
 
@@ -680,7 +684,7 @@
 
     <div class="container" id="slider-container">
       <div class="main-img">
-        <img style="height: 400px" alt="image" id="current">
+        <img style="height: 400px; object-fit: contain" alt="image" id="current">
       </div>
 
       <!-- Adding buttons to slide -->
@@ -1170,9 +1174,11 @@
       <div class="social-network">
         <div class="social-link">
           <!-- <div class="telegram-box"> -->
-            <a class="link" target="_blank" href="https://telegram.com/">
+          <span style="cursor: not-allowed">
+             <a class="link social-icons__link--disabled" target="_blank" href="https://telegram.com/">
               <img src="./Photo/telegram.svg" alt="tviter">
             </a>
+          </span>
           <!-- </div> -->
 
           <!-- <div class="instagram-box"> -->
@@ -1181,9 +1187,11 @@
             </a>
           <!-- </div> -->
 
-          <a target="_blank" class="link" href="https://www.facebook.com/">
-            <img src="./Photo/facebook.svg" alt="facebook">
-          </a>
+          <span style="cursor: not-allowed">
+            <a target="_blank" class="link social-icons__link--disabled" href="https://www.facebook.com/">
+              <img src="./Photo/facebook.svg" alt="facebook">
+            </a>
+          </span>
         </div>
 
         <div class="title-box">

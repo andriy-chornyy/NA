@@ -1,6 +1,7 @@
 'use strict';
 
 import telegramImage from './images/telegram.png';
+import instagramImage from './images/instagram.png';
 import viberImage from './images/viber.png';
 import closeImage from './images/close.png';
 
@@ -167,7 +168,7 @@ let currentIndex = 0;
 
 const images = [
   telegramImage,
-  viberImage,
+  instagramImage,
   closeImage,
 ];
 
@@ -324,7 +325,7 @@ nextButton.addEventListener('click', function() {
 // Запускаємо автоматичне перелистування кожні 5 секунди
 autoSlideInterval = setInterval(function() {
   plusIndex(1);
-}, 55000);
+}, 5500);
 
 // Функція для призупинення та знову запуску автоматичного перелистування
 function resetAutoSlide() {
@@ -332,7 +333,7 @@ function resetAutoSlide() {
 
   autoSlideInterval = setInterval(function() {
     plusIndex(1); // Запускаємо автоперемикання знову
-  }, 55000);
+  }, 5500);
 }
 
 // Функція plusIndex, яка викликає showImage зі зміненим значенням slideIndex
@@ -343,7 +344,7 @@ function plusIndex(n) {
 function startAutoSlide() {
   autoSlideInterval = setInterval(function() {
     plusIndex(1);
-  }, 55000);
+  }, 5500);
 }
 
 // Функція для призупинення автоматичного перелистування

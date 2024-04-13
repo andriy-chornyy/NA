@@ -59,6 +59,10 @@
   transition: transform 0.3s !important;
 }
 
+.social-icons__link--disabled {
+  pointer-events: none;
+}
+
 .social-icons__link:hover {
   transform: scale(1.2) !important;
 }
