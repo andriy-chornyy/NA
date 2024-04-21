@@ -77,8 +77,16 @@
 
   .lSector {
     display: flex;
-    bottom: -5%;
+    bottom: -15%;
     position: relative;
+
+    @include onTablet {
+      bottom: -5%;
+    }
+
+    @include onDesktop {
+      bottom: -5%;
+    }
 
     .h-info {
       display: flex;
@@ -248,6 +256,7 @@
 
   font-weight: 700;
   text-transform: uppercase;
+  overflow: auto;
 
   @include onTablet {
     width: 60%;

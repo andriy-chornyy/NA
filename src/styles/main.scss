@@ -42,6 +42,9 @@ textarea {
   scroll-behavior: smooth;
 }
 
+.page:has(.menu:target) {
+  overflow: hidden; /* not to scroll the page */
+}
 .main {
   margin: 0 auto;
   max-width: 1440px;
